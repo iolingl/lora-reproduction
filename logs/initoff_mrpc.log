@@ -1,0 +1,67 @@
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+init LoRA from official/LoRA/examples/NLU/roberta_base_lora_mnli.bin: 48 tensors, missing=0, unexpected=0
+Using the latest cached version of the dataset since glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'mrpc' at /home/ytli/.cache/huggingface/datasets/glue/mrpc/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c (last modified on Tue Nov  3 20:55:43 2026).
+[initoff_mrpc] trainable=887,042 lora=294,912 (0.710%) steps/epoch=230 total=4600
+  ep1 step100/230 loss=0.5349 lr=1.45e-04 0.05s/it
+  ep1 step200/230 loss=0.4826 lr=2.90e-04 0.05s/it
+[initoff_mrpc] epoch 1: {"validation": 0.8602941176470589} score=0.8603 (12s)
+  ep2 step100/230 loss=0.3416 lr=3.95e-04 0.06s/it
+  ep2 step200/230 loss=0.3360 lr=3.86e-04 0.06s/it
+[initoff_mrpc] epoch 2: {"validation": 0.8799019607843137} score=0.8799 (15s)
+  ep3 step100/230 loss=0.2599 lr=3.74e-04 0.07s/it
+  ep3 step200/230 loss=0.2637 lr=3.64e-04 0.06s/it
+[initoff_mrpc] epoch 3: {"validation": 0.8848039215686274} score=0.8848 (15s)
+  ep4 step100/230 loss=0.1979 lr=3.52e-04 0.07s/it
+  ep4 step200/230 loss=0.2262 lr=3.43e-04 0.06s/it
+[initoff_mrpc] epoch 4: {"validation": 0.8823529411764706} score=0.8824 (15s)
+  ep5 step100/230 loss=0.1730 lr=3.31e-04 0.07s/it
+  ep5 step200/230 loss=0.1694 lr=3.22e-04 0.06s/it
+[initoff_mrpc] epoch 5: {"validation": 0.8651960784313726} score=0.8652 (15s)
+  ep6 step100/230 loss=0.1461 lr=3.10e-04 0.07s/it
+  ep6 step200/230 loss=0.1326 lr=3.01e-04 0.06s/it
+[initoff_mrpc] epoch 6: {"validation": 0.8921568627450981} score=0.8922 (15s)
+  ep7 step100/230 loss=0.0865 lr=2.89e-04 0.07s/it
+  ep7 step200/230 loss=0.1062 lr=2.79e-04 0.06s/it
+[initoff_mrpc] epoch 7: {"validation": 0.8799019607843137} score=0.8799 (15s)
+  ep8 step100/230 loss=0.0810 lr=2.67e-04 0.07s/it
+  ep8 step200/230 loss=0.0861 lr=2.58e-04 0.06s/it
+[initoff_mrpc] epoch 8: {"validation": 0.8725490196078431} score=0.8725 (15s)
+  ep9 step100/230 loss=0.0561 lr=2.46e-04 0.07s/it
+  ep9 step200/230 loss=0.0741 lr=2.37e-04 0.06s/it
+[initoff_mrpc] epoch 9: {"validation": 0.8725490196078431} score=0.8725 (15s)
+  ep10 step100/230 loss=0.0372 lr=2.25e-04 0.07s/it
+  ep10 step200/230 loss=0.0562 lr=2.16e-04 0.07s/it
+[initoff_mrpc] epoch 10: {"validation": 0.8725490196078431} score=0.8725 (15s)
+  ep11 step100/230 loss=0.0680 lr=2.04e-04 0.07s/it
+  ep11 step200/230 loss=0.0574 lr=1.94e-04 0.07s/it
+[initoff_mrpc] epoch 11: {"validation": 0.8823529411764706} score=0.8824 (16s)
+  ep12 step100/230 loss=0.0500 lr=1.82e-04 0.07s/it
+  ep12 step200/230 loss=0.0484 lr=1.73e-04 0.07s/it
+[initoff_mrpc] epoch 12: {"validation": 0.8848039215686274} score=0.8848 (16s)
+  ep13 step100/230 loss=0.0340 lr=1.61e-04 0.07s/it
+  ep13 step200/230 loss=0.0377 lr=1.52e-04 0.07s/it
+[initoff_mrpc] epoch 13: {"validation": 0.8897058823529411} score=0.8897 (16s)
+  ep14 step100/230 loss=0.0235 lr=1.40e-04 0.07s/it
+  ep14 step200/230 loss=0.0235 lr=1.30e-04 0.07s/it
+[initoff_mrpc] epoch 14: {"validation": 0.8872549019607843} score=0.8873 (15s)
+  ep15 step100/230 loss=0.0300 lr=1.18e-04 0.07s/it
+  ep15 step200/230 loss=0.0363 lr=1.09e-04 0.07s/it
+[initoff_mrpc] epoch 15: {"validation": 0.8921568627450981} score=0.8922 (15s)
+  ep16 step100/230 loss=0.0149 lr=9.71e-05 0.07s/it
+  ep16 step200/230 loss=0.0274 lr=8.79e-05 0.07s/it
+[initoff_mrpc] epoch 16: {"validation": 0.8848039215686274} score=0.8848 (16s)
+  ep17 step100/230 loss=0.0267 lr=7.59e-05 0.07s/it
+  ep17 step200/230 loss=0.0265 lr=6.66e-05 0.07s/it
+[initoff_mrpc] epoch 17: {"validation": 0.8848039215686274} score=0.8848 (15s)
+  ep18 step100/230 loss=0.0107 lr=5.46e-05 0.07s/it
+  ep18 step200/230 loss=0.0148 lr=4.53e-05 0.06s/it
+[initoff_mrpc] epoch 18: {"validation": 0.8921568627450981} score=0.8922 (15s)
+  ep19 step100/230 loss=0.0185 lr=3.33e-05 0.07s/it
+  ep19 step200/230 loss=0.0245 lr=2.41e-05 0.07s/it
+[initoff_mrpc] epoch 19: {"validation": 0.8872549019607843} score=0.8873 (15s)
+  ep20 step100/230 loss=0.0112 lr=1.20e-05 0.07s/it
+  ep20 step200/230 loss=0.0152 lr=2.78e-06 0.07s/it
+[initoff_mrpc] epoch 20: {"validation": 0.8897058823529411} score=0.8897 (15s)
+[initoff_mrpc] DONE best=0.8922 time=5.1min peak=1180MB

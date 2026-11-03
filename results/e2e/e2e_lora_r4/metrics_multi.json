@@ -1,0 +1,13 @@
+{
+  "run": "results/e2e/e2e_lora_r4",
+  "n_rows": 4693,
+  "n_examples": 630,
+  "refs_per_example": 7.449206349206349,
+  "inconsistent_predictions": 4,
+  "metrics": {
+    "BLEU": 67.101441164577,
+    "ROUGE-L": 70.34855534150276,
+    "METEOR": 73.74844127288041,
+    "CIDEr": 1.8294755557183953
+  }
+}

@@ -1,0 +1,692 @@
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Using the latest cached version of the dataset since glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'qqp' at /home/ytli/.cache/huggingface/datasets/glue/qqp/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c (last modified on Tue Nov  3 19:40:54 2026).
+Map (num_proc=2):   0%|          | 0/363846 [00:00<?, ? examples/s]Map (num_proc=2):   0%|          | 1000/363846 [00:00<04:10, 1449.25 examples/s]Map (num_proc=2):   1%|          | 3000/363846 [00:00<01:30, 4008.18 examples/s]Map (num_proc=2):   1%|▏         | 5000/363846 [00:01<01:00, 5945.78 examples/s]Map (num_proc=2):   2%|▏         | 7000/363846 [00:01<00:49, 7212.87 examples/s]Map (num_proc=2):   2%|▏         | 8000/363846 [00:01<00:46, 7643.88 examples/s]Map (num_proc=2):   2%|▏         | 9000/363846 [00:01<00:56, 6293.55 examples/s]Map (num_proc=2):   3%|▎         | 10000/363846 [00:01<00:57, 6191.02 examples/s]Map (num_proc=2):   3%|▎         | 11000/363846 [00:03<02:52, 2047.13 examples/s]Map (num_proc=2):   4%|▎         | 13000/363846 [00:03<02:05, 2799.64 examples/s]Map (num_proc=2):   4%|▍         | 15000/363846 [00:03<01:42, 3390.23 examples/s]Map (num_proc=2):   5%|▍         | 17000/363846 [00:04<01:30, 3823.12 examples/s]Map (num_proc=2):   5%|▌         | 19000/363846 [00:04<01:23, 4124.26 examples/s]Map (num_proc=2):   6%|▌         | 21000/363846 [00:05<01:17, 4436.13 examples/s]Map (num_proc=2):   6%|▋         | 23000/363846 [00:05<01:13, 4642.73 examples/s]Map (num_proc=2):   7%|▋         | 24000/363846 [00:05<01:06, 5079.93 examples/s]Map (num_proc=2):   7%|▋         | 25000/363846 [00:05<01:12, 4682.34 examples/s]Map (num_proc=2):   7%|▋         | 26000/363846 [00:06<01:06, 5116.40 examples/s]Map (num_proc=2):   7%|▋         | 27000/363846 [00:06<01:12, 4620.26 examples/s]Map (num_proc=2):   8%|▊         | 28000/363846 [00:06<01:04, 5219.67 examples/s]Map (num_proc=2):   8%|▊         | 29000/363846 [00:06<01:12, 4639.65 examples/s]Map (num_proc=2):   8%|▊         | 30000/363846 [00:06<01:03, 5243.97 examples/s]Map (num_proc=2):   9%|▊         | 31000/363846 [00:07<01:10, 4694.48 examples/s]Map (num_proc=2):   9%|▉         | 32000/363846 [00:07<01:02, 5347.57 examples/s]Map (num_proc=2):   9%|▉         | 33000/363846 [00:07<01:09, 4787.09 examples/s]Map (num_proc=2):   9%|▉         | 34000/363846 [00:07<01:01, 5368.48 examples/s]Map (num_proc=2):  10%|▉         | 35000/363846 [00:07<01:10, 4652.51 examples/s]Map (num_proc=2):  10%|▉         | 36000/363846 [00:08<01:04, 5086.64 examples/s]Map (num_proc=2):  10%|█         | 37000/363846 [00:08<01:11, 4596.69 examples/s]Map (num_proc=2):  10%|█         | 38000/363846 [00:08<01:01, 5288.23 examples/s]Map (num_proc=2):  11%|█         | 39000/363846 [00:08<01:09, 4684.14 examples/s]Map (num_proc=2):  11%|█         | 40000/363846 [00:08<01:00, 5369.58 examples/s]Map (num_proc=2):  11%|█▏        | 41000/363846 [00:09<01:07, 4778.50 examples/s]Map (num_proc=2):  12%|█▏        | 42000/363846 [00:09<00:59, 5383.97 examples/s]Map (num_proc=2):  12%|█▏        | 43000/363846 [00:09<01:08, 4698.02 examples/s]Map (num_proc=2):  12%|█▏        | 44000/363846 [00:09<00:58, 5491.31 examples/s]Map (num_proc=2):  12%|█▏        | 45000/363846 [00:09<01:07, 4706.01 examples/s]Map (num_proc=2):  13%|█▎        | 46000/363846 [00:10<01:02, 5109.89 examples/s]Map (num_proc=2):  13%|█▎        | 47000/363846 [00:10<01:10, 4510.65 examples/s]Map (num_proc=2):  13%|█▎        | 48000/363846 [00:10<00:59, 5298.10 examples/s]Map (num_proc=2):  13%|█▎        | 49000/363846 [00:10<01:08, 4602.12 examples/s]Map (num_proc=2):  14%|█▍        | 51000/363846 [00:11<01:05, 4787.80 examples/s]Map (num_proc=2):  15%|█▍        | 53000/363846 [00:11<01:03, 4918.51 examples/s]Map (num_proc=2):  15%|█▍        | 54000/363846 [00:11<00:56, 5491.11 examples/s]Map (num_proc=2):  15%|█▌        | 55000/363846 [00:11<01:05, 4685.49 examples/s]Map (num_proc=2):  16%|█▌        | 57000/363846 [00:12<01:03, 4866.30 examples/s]Map (num_proc=2):  16%|█▌        | 58000/363846 [00:12<00:55, 5500.29 examples/s]Map (num_proc=2):  16%|█▌        | 59000/363846 [00:12<01:03, 4774.36 examples/s]Map (num_proc=2):  16%|█▋        | 60000/363846 [00:12<00:55, 5464.06 examples/s]Map (num_proc=2):  17%|█▋        | 61000/363846 [00:13<01:05, 4600.14 examples/s]Map (num_proc=2):  17%|█▋        | 63000/363846 [00:13<01:02, 4781.51 examples/s]Map (num_proc=2):  18%|█▊        | 65000/363846 [00:14<01:31, 3273.58 examples/s]Map (num_proc=2):  18%|█▊        | 66000/363846 [00:14<01:18, 3805.17 examples/s]Map (num_proc=2):  18%|█▊        | 67000/363846 [00:14<01:21, 3649.50 examples/s]Map (num_proc=2):  19%|█▊        | 68000/363846 [00:14<01:08, 4323.20 examples/s]Map (num_proc=2):  19%|█▉        | 69000/363846 [00:15<01:13, 4031.54 examples/s]Map (num_proc=2):  19%|█▉        | 70000/363846 [00:15<01:02, 4689.44 examples/s]Map (num_proc=2):  20%|█▉        | 71000/363846 [00:15<01:07, 4309.39 examples/s]Map (num_proc=2):  20%|█▉        | 72000/363846 [00:15<00:58, 5007.04 examples/s]Map (num_proc=2):  20%|██        | 73000/363846 [00:16<01:05, 4410.68 examples/s]Map (num_proc=2):  20%|██        | 74000/363846 [00:16<00:57, 5009.31 examples/s]Map (num_proc=2):  21%|██        | 75000/363846 [00:16<01:04, 4448.52 examples/s]Map (num_proc=2):  21%|██        | 76000/363846 [00:16<00:54, 5244.72 examples/s]Map (num_proc=2):  21%|██        | 77000/363846 [00:16<01:02, 4585.07 examples/s]Map (num_proc=2):  22%|██▏       | 79000/363846 [00:17<00:59, 4764.65 examples/s]Map (num_proc=2):  22%|██▏       | 81000/363846 [00:17<00:57, 4924.00 examples/s]Map (num_proc=2):  23%|██▎       | 83000/363846 [00:18<00:56, 4999.53 examples/s]Map (num_proc=2):  23%|██▎       | 85000/363846 [00:18<00:55, 5009.68 examples/s]Map (num_proc=2):  24%|██▍       | 87000/363846 [00:18<00:55, 4989.05 examples/s]Map (num_proc=2):  24%|██▍       | 89000/363846 [00:19<00:54, 5058.01 examples/s]Map (num_proc=2):  25%|██▌       | 91000/363846 [00:19<00:53, 5097.03 examples/s]Map (num_proc=2):  26%|██▌       | 93000/363846 [00:20<00:53, 5098.63 examples/s]Map (num_proc=2):  26%|██▌       | 95000/363846 [00:20<00:52, 5074.36 examples/s]Map (num_proc=2):  27%|██▋       | 97000/363846 [00:20<00:52, 5056.65 examples/s]Map (num_proc=2):  27%|██▋       | 99000/363846 [00:21<00:52, 5084.81 examples/s]Map (num_proc=2):  28%|██▊       | 101000/363846 [00:21<00:51, 5064.22 examples/s]Map (num_proc=2):  28%|██▊       | 103000/363846 [00:22<00:52, 4973.57 examples/s]Map (num_proc=2):  29%|██▉       | 105000/363846 [00:22<00:52, 4946.99 examples/s]Map (num_proc=2):  29%|██▉       | 107000/363846 [00:22<00:50, 5068.65 examples/s]Map (num_proc=2):  30%|██▉       | 109000/363846 [00:23<00:49, 5129.90 examples/s]Map (num_proc=2):  31%|███       | 111000/363846 [00:23<00:48, 5167.06 examples/s]Map (num_proc=2):  31%|███       | 113000/363846 [00:23<00:48, 5151.93 examples/s]Map (num_proc=2):  32%|███▏      | 115000/363846 [00:24<00:47, 5190.48 examples/s]Map (num_proc=2):  32%|███▏      | 117000/363846 [00:24<00:47, 5229.07 examples/s]Map (num_proc=2):  33%|███▎      | 119000/363846 [00:25<01:05, 3759.22 examples/s]Map (num_proc=2):  33%|███▎      | 121000/363846 [00:26<00:59, 4053.97 examples/s]Map (num_proc=2):  34%|███▍      | 123000/363846 [00:26<00:56, 4285.06 examples/s]Map (num_proc=2):  34%|███▍      | 125000/363846 [00:26<00:53, 4480.10 examples/s]Map (num_proc=2):  35%|███▍      | 127000/363846 [00:27<00:51, 4599.02 examples/s]Map (num_proc=2):  35%|███▌      | 129000/363846 [00:27<00:50, 4671.15 examples/s]Map (num_proc=2):  36%|███▌      | 131000/363846 [00:28<00:49, 4738.90 examples/s]Map (num_proc=2):  37%|███▋      | 133000/363846 [00:28<00:48, 4752.86 examples/s]Map (num_proc=2):  37%|███▋      | 135000/363846 [00:28<00:47, 4834.91 examples/s]Map (num_proc=2):  38%|███▊      | 137000/363846 [00:29<00:46, 4851.64 examples/s]Map (num_proc=2):  38%|███▊      | 139000/363846 [00:29<00:46, 4842.83 examples/s]Map (num_proc=2):  39%|███▉      | 141000/363846 [00:30<00:45, 4869.49 examples/s]Map (num_proc=2):  39%|███▉      | 142000/363846 [00:30<00:42, 5256.57 examples/s]Map (num_proc=2):  39%|███▉      | 143000/363846 [00:30<00:47, 4601.52 examples/s]Map (num_proc=2):  40%|███▉      | 145000/363846 [00:30<00:46, 4658.08 examples/s]Map (num_proc=2):  40%|████      | 147000/363846 [00:31<00:46, 4671.99 examples/s]Map (num_proc=2):  41%|████      | 149000/363846 [00:31<00:46, 4589.02 examples/s]Map (num_proc=2):  42%|████▏     | 151000/363846 [00:32<00:46, 4616.44 examples/s]Map (num_proc=2):  42%|████▏     | 153000/363846 [00:32<00:44, 4694.03 examples/s]Map (num_proc=2):  43%|████▎     | 155000/363846 [00:33<00:44, 4738.05 examples/s]Map (num_proc=2):  43%|████▎     | 157000/363846 [00:33<00:43, 4801.85 examples/s]Map (num_proc=2):  44%|████▎     | 159000/363846 [00:33<00:42, 4843.81 examples/s]Map (num_proc=2):  44%|████▍     | 161000/363846 [00:34<00:40, 4962.08 examples/s]Map (num_proc=2):  45%|████▍     | 163000/363846 [00:34<00:40, 5018.79 examples/s]Map (num_proc=2):  45%|████▌     | 165000/363846 [00:35<00:38, 5135.15 examples/s]Map (num_proc=2):  46%|████▌     | 167000/363846 [00:35<00:38, 5170.42 examples/s]Map (num_proc=2):  46%|████▋     | 169000/363846 [00:35<00:37, 5186.57 examples/s]Map (num_proc=2):  47%|████▋     | 171000/363846 [00:36<00:37, 5164.38 examples/s]Map (num_proc=2):  48%|████▊     | 173000/363846 [00:37<00:52, 3635.61 examples/s]Map (num_proc=2):  48%|████▊     | 175000/363846 [00:37<00:47, 3965.54 examples/s]Map (num_proc=2):  49%|████▊     | 177000/363846 [00:37<00:39, 4756.57 examples/s]Map (num_proc=2):  49%|████▉     | 178000/363846 [00:37<00:36, 5160.58 examples/s]Map (num_proc=2):  49%|████▉     | 179000/363846 [00:38<00:35, 5216.22 examples/s]Map (num_proc=2):  50%|████▉     | 181000/363846 [00:38<00:29, 6264.38 examples/s]Map (num_proc=2):  50%|█████     | 182000/363846 [00:38<00:28, 6431.39 examples/s]Map (num_proc=2):  50%|█████     | 183000/363846 [00:38<00:31, 5711.95 examples/s]Map (num_proc=2):  51%|█████     | 184000/363846 [00:38<00:30, 5990.03 examples/s]Map (num_proc=2):  51%|█████     | 185000/363846 [00:39<00:34, 5181.93 examples/s]Map (num_proc=2):  51%|█████     | 186000/363846 [00:39<00:31, 5589.60 examples/s]Map (num_proc=2):  51%|█████▏    | 187000/363846 [00:39<00:35, 4943.98 examples/s]Map (num_proc=2):  52%|█████▏    | 188000/363846 [00:39<00:31, 5514.94 examples/s]Map (num_proc=2):  52%|█████▏    | 189000/363846 [00:39<00:35, 4857.73 examples/s]Map (num_proc=2):  52%|█████▏    | 190000/363846 [00:39<00:32, 5321.67 examples/s]Map (num_proc=2):  52%|█████▏    | 191000/363846 [00:40<00:35, 4890.07 examples/s]Map (num_proc=2):  53%|█████▎    | 192000/363846 [00:40<00:32, 5219.68 examples/s]Map (num_proc=2):  53%|█████▎    | 193000/363846 [00:40<00:34, 4893.58 examples/s]Map (num_proc=2):  53%|█████▎    | 194000/363846 [00:40<00:29, 5663.37 examples/s]Map (num_proc=2):  54%|█████▎    | 195000/363846 [00:40<00:30, 5571.50 examples/s]Map (num_proc=2):  54%|█████▍    | 196000/363846 [00:41<00:28, 5873.21 examples/s]Map (num_proc=2):  54%|█████▍    | 197000/363846 [00:41<00:25, 6652.27 examples/s]Map (num_proc=2):  54%|█████▍    | 198000/363846 [00:41<00:22, 7372.16 examples/s]Map (num_proc=2):  55%|█████▍    | 200000/363846 [00:41<00:19, 8485.67 examples/s]Map (num_proc=2):  56%|█████▌    | 202000/363846 [00:41<00:17, 9108.15 examples/s]Map (num_proc=2):  56%|█████▌    | 204000/363846 [00:41<00:16, 9408.75 examples/s]Map (num_proc=2):  56%|█████▋    | 205000/363846 [00:41<00:16, 9518.32 examples/s]Map (num_proc=2):  57%|█████▋    | 206000/363846 [00:42<00:17, 9181.61 examples/s]Map (num_proc=2):  57%|█████▋    | 207000/363846 [00:42<00:16, 9348.59 examples/s]Map (num_proc=2):  57%|█████▋    | 208000/363846 [00:42<00:17, 9075.41 examples/s]Map (num_proc=2):  57%|█████▋    | 209000/363846 [00:42<00:17, 9106.16 examples/s]Map (num_proc=2):  58%|█████▊    | 210000/363846 [00:42<00:16, 9307.83 examples/s]Map (num_proc=2):  58%|█████▊    | 212000/363846 [00:42<00:16, 9051.24 examples/s]Map (num_proc=2):  59%|█████▉    | 214000/363846 [00:42<00:16, 8917.11 examples/s]Map (num_proc=2):  59%|█████▉    | 216000/363846 [00:43<00:16, 8754.78 examples/s]Map (num_proc=2):  60%|█████▉    | 218000/363846 [00:43<00:16, 8834.76 examples/s]Map (num_proc=2):  60%|██████    | 220000/363846 [00:43<00:15, 9042.13 examples/s]Map (num_proc=2):  61%|██████    | 222000/363846 [00:43<00:15, 9331.29 examples/s]Map (num_proc=2):  62%|██████▏   | 224000/363846 [00:44<00:15, 9309.30 examples/s]Map (num_proc=2):  62%|██████▏   | 226000/363846 [00:44<00:16, 8316.00 examples/s]Map (num_proc=2):  62%|██████▏   | 227000/363846 [00:44<00:18, 7544.78 examples/s]Map (num_proc=2):  63%|██████▎   | 228000/363846 [00:44<00:20, 6752.15 examples/s]Map (num_proc=2):  63%|██████▎   | 229000/363846 [00:44<00:18, 7129.90 examples/s]Map (num_proc=2):  63%|██████▎   | 230000/363846 [00:44<00:17, 7597.76 examples/s]Map (num_proc=2):  63%|██████▎   | 231000/363846 [00:45<00:17, 7634.26 examples/s]Map (num_proc=2):  64%|██████▍   | 233000/363846 [00:45<00:16, 8026.01 examples/s]Map (num_proc=2):  65%|██████▍   | 235000/363846 [00:45<00:15, 8110.43 examples/s]Map (num_proc=2):  65%|██████▌   | 237000/363846 [00:45<00:15, 8361.18 examples/s]Map (num_proc=2):  66%|██████▌   | 239000/363846 [00:45<00:14, 8663.80 examples/s]Map (num_proc=2):  66%|██████▌   | 241000/363846 [00:46<00:13, 8860.56 examples/s]Map (num_proc=2):  67%|██████▋   | 243000/363846 [00:46<00:13, 8977.65 examples/s]Map (num_proc=2):  67%|██████▋   | 245000/363846 [00:46<00:13, 9048.85 examples/s]Map (num_proc=2):  68%|██████▊   | 247000/363846 [00:46<00:12, 9081.58 examples/s]Map (num_proc=2):  68%|██████▊   | 249000/363846 [00:47<00:12, 9017.25 examples/s]Map (num_proc=2):  69%|██████▉   | 251000/363846 [00:47<00:12, 9288.82 examples/s]Map (num_proc=2):  70%|██████▉   | 253000/363846 [00:47<00:12, 9133.33 examples/s]Map (num_proc=2):  70%|███████   | 255000/363846 [00:47<00:11, 9076.58 examples/s]Map (num_proc=2):  71%|███████   | 257000/363846 [00:47<00:11, 9102.50 examples/s]Map (num_proc=2):  71%|███████   | 259000/363846 [00:48<00:11, 9223.69 examples/s]Map (num_proc=2):  72%|███████▏  | 261000/363846 [00:48<00:11, 8971.51 examples/s]Map (num_proc=2):  72%|███████▏  | 263000/363846 [00:48<00:11, 9022.07 examples/s]Map (num_proc=2):  73%|███████▎  | 265000/363846 [00:48<00:10, 9068.02 examples/s]Map (num_proc=2):  73%|███████▎  | 267000/363846 [00:49<00:10, 9107.64 examples/s]Map (num_proc=2):  74%|███████▍  | 269000/363846 [00:49<00:10, 9110.25 examples/s]Map (num_proc=2):  74%|███████▍  | 271000/363846 [00:49<00:10, 9117.94 examples/s]Map (num_proc=2):  75%|███████▌  | 273000/363846 [00:49<00:10, 9033.97 examples/s]Map (num_proc=2):  76%|███████▌  | 275000/363846 [00:49<00:09, 9040.87 examples/s]Map (num_proc=2):  76%|███████▌  | 277000/363846 [00:50<00:09, 9003.62 examples/s]Map (num_proc=2):  77%|███████▋  | 279000/363846 [00:50<00:09, 8978.85 examples/s]Map (num_proc=2):  77%|███████▋  | 280000/363846 [00:50<00:10, 7727.52 examples/s]Map (num_proc=2):  78%|███████▊  | 282000/363846 [00:50<00:11, 7168.78 examples/s]Map (num_proc=2):  78%|███████▊  | 283000/363846 [00:51<00:11, 7006.65 examples/s]Map (num_proc=2):  78%|███████▊  | 285000/363846 [00:51<00:10, 7456.70 examples/s]Map (num_proc=2):  79%|███████▉  | 287000/363846 [00:51<00:09, 8001.77 examples/s]Map (num_proc=2):  79%|███████▉  | 289000/363846 [00:51<00:08, 8488.58 examples/s]Map (num_proc=2):  80%|███████▉  | 291000/363846 [00:51<00:08, 8747.66 examples/s]Map (num_proc=2):  81%|████████  | 293000/363846 [00:52<00:07, 9054.72 examples/s]Map (num_proc=2):  81%|████████  | 294000/363846 [00:52<00:07, 8979.40 examples/s]Map (num_proc=2):  81%|████████  | 295000/363846 [00:52<00:07, 8986.90 examples/s]Map (num_proc=2):  82%|████████▏ | 297000/363846 [00:52<00:07, 9301.79 examples/s]Map (num_proc=2):  82%|████████▏ | 298000/363846 [00:52<00:07, 9382.17 examples/s]Map (num_proc=2):  82%|████████▏ | 299000/363846 [00:52<00:07, 9183.32 examples/s]Map (num_proc=2):  83%|████████▎ | 301000/363846 [00:53<00:06, 9268.08 examples/s]Map (num_proc=2):  83%|████████▎ | 302000/363846 [00:53<00:06, 9400.96 examples/s]Map (num_proc=2):  83%|████████▎ | 303000/363846 [00:53<00:06, 9098.00 examples/s]Map (num_proc=2):  84%|████████▎ | 304000/363846 [00:53<00:06, 9251.41 examples/s]Map (num_proc=2):  84%|████████▍ | 305000/363846 [00:53<00:06, 9038.99 examples/s]Map (num_proc=2):  84%|████████▍ | 307000/363846 [00:53<00:06, 8879.21 examples/s]Map (num_proc=2):  85%|████████▍ | 309000/363846 [00:53<00:06, 8941.50 examples/s]Map (num_proc=2):  85%|████████▌ | 311000/363846 [00:54<00:05, 9052.60 examples/s]Map (num_proc=2):  86%|████████▌ | 313000/363846 [00:54<00:05, 9019.11 examples/s]Map (num_proc=2):  87%|████████▋ | 315000/363846 [00:54<00:05, 8999.04 examples/s]Map (num_proc=2):  87%|████████▋ | 317000/363846 [00:54<00:05, 9047.00 examples/s]Map (num_proc=2):  88%|████████▊ | 319000/363846 [00:55<00:04, 9158.53 examples/s]Map (num_proc=2):  88%|████████▊ | 321000/363846 [00:55<00:04, 9300.06 examples/s]Map (num_proc=2):  89%|████████▉ | 323000/363846 [00:55<00:04, 9227.10 examples/s]Map (num_proc=2):  89%|████████▉ | 325000/363846 [00:55<00:04, 9443.95 examples/s]Map (num_proc=2):  90%|████████▉ | 327000/363846 [00:55<00:03, 9402.78 examples/s]Map (num_proc=2):  90%|█████████ | 329000/363846 [00:56<00:03, 9525.72 examples/s]Map (num_proc=2):  91%|█████████ | 331000/363846 [00:56<00:03, 9446.23 examples/s]Map (num_proc=2):  92%|█████████▏| 333000/363846 [00:56<00:03, 8313.48 examples/s]Map (num_proc=2):  92%|█████████▏| 334000/363846 [00:56<00:03, 7649.39 examples/s]Map (num_proc=2):  92%|█████████▏| 336000/363846 [00:56<00:03, 8406.11 examples/s]Map (num_proc=2):  93%|█████████▎| 337000/363846 [00:57<00:03, 7289.20 examples/s]Map (num_proc=2):  93%|█████████▎| 338000/363846 [00:57<00:03, 6867.16 examples/s]Map (num_proc=2):  93%|█████████▎| 340000/363846 [00:57<00:03, 7446.39 examples/s]Map (num_proc=2):  94%|█████████▍| 342000/363846 [00:57<00:02, 8138.65 examples/s]Map (num_proc=2):  95%|█████████▍| 344000/363846 [00:57<00:02, 8614.67 examples/s]Map (num_proc=2):  95%|█████████▌| 346000/363846 [00:58<00:01, 9042.91 examples/s]Map (num_proc=2):  96%|█████████▌| 348000/363846 [00:58<00:01, 9060.97 examples/s]Map (num_proc=2):  96%|█████████▌| 350000/363846 [00:58<00:01, 9226.94 examples/s]Map (num_proc=2):  97%|█████████▋| 352000/363846 [00:58<00:01, 9226.83 examples/s]Map (num_proc=2):  97%|█████████▋| 354000/363846 [00:59<00:01, 9324.18 examples/s]Map (num_proc=2):  98%|█████████▊| 356000/363846 [00:59<00:00, 9553.48 examples/s]Map (num_proc=2):  98%|█████████▊| 358000/363846 [00:59<00:00, 9541.67 examples/s]Map (num_proc=2):  99%|█████████▊| 359000/363846 [00:59<00:00, 9477.86 examples/s]Map (num_proc=2):  99%|█████████▉| 360923/363846 [00:59<00:00, 9898.40 examples/s]Map (num_proc=2):  99%|█████████▉| 361923/363846 [00:59<00:00, 9372.59 examples/s]Map (num_proc=2): 100%|█████████▉| 362923/363846 [00:59<00:00, 9025.57 examples/s]Map (num_proc=2): 100%|██████████| 363846/363846 [01:00<00:00, 8675.49 examples/s]Map (num_proc=2): 100%|██████████| 363846/363846 [01:00<00:00, 6035.92 examples/s]
+Map (num_proc=2):   0%|          | 0/40430 [00:00<?, ? examples/s]Map (num_proc=2):   2%|▏         | 1000/40430 [00:00<00:24, 1596.62 examples/s]Map (num_proc=2):   7%|▋         | 3000/40430 [00:00<00:09, 4100.34 examples/s]Map (num_proc=2):  12%|█▏        | 5000/40430 [00:01<00:06, 5851.94 examples/s]Map (num_proc=2):  15%|█▍        | 6000/40430 [00:01<00:05, 6477.89 examples/s]Map (num_proc=2):  17%|█▋        | 7000/40430 [00:01<00:04, 7149.89 examples/s]Map (num_proc=2):  20%|█▉        | 8000/40430 [00:01<00:04, 7420.66 examples/s]Map (num_proc=2):  25%|██▍       | 10000/40430 [00:01<00:03, 8128.76 examples/s]Map (num_proc=2):  27%|██▋       | 11000/40430 [00:02<00:06, 4421.08 examples/s]Map (num_proc=2):  30%|██▉       | 12000/40430 [00:02<00:05, 4799.36 examples/s]Map (num_proc=2):  35%|███▍      | 14000/40430 [00:02<00:04, 6016.45 examples/s]Map (num_proc=2):  40%|███▉      | 16000/40430 [00:02<00:03, 6867.12 examples/s]Map (num_proc=2):  45%|████▍     | 18000/40430 [00:02<00:03, 7454.96 examples/s]Map (num_proc=2):  49%|████▉     | 20000/40430 [00:03<00:02, 7911.26 examples/s]Map (num_proc=2):  54%|█████▍    | 22000/40430 [00:03<00:02, 8333.14 examples/s]Map (num_proc=2):  59%|█████▉    | 24000/40430 [00:03<00:01, 8475.88 examples/s]Map (num_proc=2):  64%|██████▍   | 26000/40430 [00:03<00:01, 8743.95 examples/s]Map (num_proc=2):  69%|██████▉   | 28000/40430 [00:04<00:01, 8960.23 examples/s]Map (num_proc=2):  74%|███████▍  | 30000/40430 [00:04<00:01, 8862.01 examples/s]Map (num_proc=2):  79%|███████▉  | 32000/40430 [00:04<00:00, 9116.62 examples/s]Map (num_proc=2):  84%|████████▍ | 34000/40430 [00:04<00:00, 9286.22 examples/s]Map (num_proc=2):  89%|████████▉ | 36000/40430 [00:04<00:00, 9180.85 examples/s]Map (num_proc=2):  94%|█████████▍| 38000/40430 [00:05<00:00, 9246.82 examples/s]Map (num_proc=2):  99%|█████████▉| 40215/40430 [00:05<00:00, 10092.71 examples/s]Map (num_proc=2): 100%|██████████| 40430/40430 [00:05<00:00, 7355.93 examples/s] 
+[qqp_roberta-base_lora_r8_qv_s0] trainable=887,042 lora=294,912 (0.710%) steps/epoch=22741 total=68223
+  ep1 step100/22741 loss=0.6740 lr=1.22e-05 0.07s/it
+  ep1 step200/22741 loss=0.6695 lr=2.44e-05 0.06s/it
+  ep1 step300/22741 loss=0.6653 lr=3.66e-05 0.06s/it
+  ep1 step400/22741 loss=0.6605 lr=4.89e-05 0.06s/it
+  ep1 step500/22741 loss=0.6421 lr=6.11e-05 0.06s/it
+  ep1 step600/22741 loss=0.6138 lr=7.33e-05 0.06s/it
+  ep1 step700/22741 loss=0.5945 lr=8.55e-05 0.06s/it
+  ep1 step800/22741 loss=0.5784 lr=9.77e-05 0.06s/it
+  ep1 step900/22741 loss=0.5658 lr=1.10e-04 0.06s/it
+  ep1 step1000/22741 loss=0.5555 lr=1.22e-04 0.06s/it
+  ep1 step1100/22741 loss=0.5444 lr=1.34e-04 0.06s/it
+  ep1 step1200/22741 loss=0.5368 lr=1.47e-04 0.06s/it
+  ep1 step1300/22741 loss=0.5303 lr=1.59e-04 0.06s/it
+  ep1 step1400/22741 loss=0.5227 lr=1.71e-04 0.06s/it
+  ep1 step1500/22741 loss=0.5159 lr=1.83e-04 0.06s/it
+  ep1 step1600/22741 loss=0.5103 lr=1.95e-04 0.06s/it
+  ep1 step1700/22741 loss=0.5039 lr=2.08e-04 0.06s/it
+  ep1 step1800/22741 loss=0.4993 lr=2.20e-04 0.06s/it
+  ep1 step1900/22741 loss=0.4962 lr=2.32e-04 0.06s/it
+  ep1 step2000/22741 loss=0.4921 lr=2.44e-04 0.06s/it
+  ep1 step2100/22741 loss=0.4882 lr=2.57e-04 0.06s/it
+  ep1 step2200/22741 loss=0.4856 lr=2.69e-04 0.06s/it
+  ep1 step2300/22741 loss=0.4822 lr=2.81e-04 0.06s/it
+  ep1 step2400/22741 loss=0.4795 lr=2.93e-04 0.06s/it
+  ep1 step2500/22741 loss=0.4769 lr=3.05e-04 0.06s/it
+  ep1 step2600/22741 loss=0.4742 lr=3.18e-04 0.06s/it
+  ep1 step2700/22741 loss=0.4709 lr=3.30e-04 0.06s/it
+  ep1 step2800/22741 loss=0.4681 lr=3.42e-04 0.06s/it
+  ep1 step2900/22741 loss=0.4668 lr=3.54e-04 0.06s/it
+  ep1 step3000/22741 loss=0.4648 lr=3.66e-04 0.06s/it
+  ep1 step3100/22741 loss=0.4627 lr=3.79e-04 0.06s/it
+  ep1 step3200/22741 loss=0.4606 lr=3.91e-04 0.06s/it
+  ep1 step3300/22741 loss=0.4586 lr=4.03e-04 0.06s/it
+  ep1 step3400/22741 loss=0.4571 lr=4.15e-04 0.06s/it
+  ep1 step3500/22741 loss=0.4549 lr=4.28e-04 0.06s/it
+  ep1 step3600/22741 loss=0.4532 lr=4.40e-04 0.06s/it
+  ep1 step3700/22741 loss=0.4513 lr=4.52e-04 0.06s/it
+  ep1 step3800/22741 loss=0.4494 lr=4.64e-04 0.06s/it
+  ep1 step3900/22741 loss=0.4476 lr=4.76e-04 0.06s/it
+  ep1 step4000/22741 loss=0.4466 lr=4.89e-04 0.06s/it
+  ep1 step4100/22741 loss=0.4459 lr=5.00e-04 0.06s/it
+  ep1 step4200/22741 loss=0.4445 lr=4.99e-04 0.06s/it
+  ep1 step4300/22741 loss=0.4430 lr=4.98e-04 0.06s/it
+  ep1 step4400/22741 loss=0.4417 lr=4.98e-04 0.06s/it
+  ep1 step4500/22741 loss=0.4400 lr=4.97e-04 0.06s/it
+  ep1 step4600/22741 loss=0.4389 lr=4.96e-04 0.06s/it
+  ep1 step4700/22741 loss=0.4384 lr=4.95e-04 0.06s/it
+  ep1 step4800/22741 loss=0.4375 lr=4.94e-04 0.06s/it
+  ep1 step4900/22741 loss=0.4358 lr=4.94e-04 0.06s/it
+  ep1 step5000/22741 loss=0.4349 lr=4.93e-04 0.06s/it
+  ep1 step5100/22741 loss=0.4334 lr=4.92e-04 0.06s/it
+  ep1 step5200/22741 loss=0.4322 lr=4.91e-04 0.06s/it
+  ep1 step5300/22741 loss=0.4309 lr=4.91e-04 0.06s/it
+  ep1 step5400/22741 loss=0.4299 lr=4.90e-04 0.06s/it
+  ep1 step5500/22741 loss=0.4289 lr=4.89e-04 0.06s/it
+  ep1 step5600/22741 loss=0.4283 lr=4.88e-04 0.06s/it
+  ep1 step5700/22741 loss=0.4270 lr=4.87e-04 0.06s/it
+  ep1 step5800/22741 loss=0.4259 lr=4.87e-04 0.06s/it
+  ep1 step5900/22741 loss=0.4248 lr=4.86e-04 0.06s/it
+  ep1 step6000/22741 loss=0.4239 lr=4.85e-04 0.06s/it
+  ep1 step6100/22741 loss=0.4224 lr=4.84e-04 0.06s/it
+  ep1 step6200/22741 loss=0.4213 lr=4.84e-04 0.06s/it
+  ep1 step6300/22741 loss=0.4200 lr=4.83e-04 0.06s/it
+  ep1 step6400/22741 loss=0.4191 lr=4.82e-04 0.06s/it
+  ep1 step6500/22741 loss=0.4181 lr=4.81e-04 0.06s/it
+  ep1 step6600/22741 loss=0.4168 lr=4.80e-04 0.06s/it
+  ep1 step6700/22741 loss=0.4160 lr=4.80e-04 0.06s/it
+  ep1 step6800/22741 loss=0.4150 lr=4.79e-04 0.06s/it
+  ep1 step6900/22741 loss=0.4144 lr=4.78e-04 0.06s/it
+  ep1 step7000/22741 loss=0.4134 lr=4.77e-04 0.06s/it
+  ep1 step7100/22741 loss=0.4124 lr=4.77e-04 0.06s/it
+  ep1 step7200/22741 loss=0.4116 lr=4.76e-04 0.06s/it
+  ep1 step7300/22741 loss=0.4109 lr=4.75e-04 0.06s/it
+  ep1 step7400/22741 loss=0.4103 lr=4.74e-04 0.06s/it
+  ep1 step7500/22741 loss=0.4096 lr=4.73e-04 0.06s/it
+  ep1 step7600/22741 loss=0.4087 lr=4.73e-04 0.06s/it
+  ep1 step7700/22741 loss=0.4079 lr=4.72e-04 0.06s/it
+  ep1 step7800/22741 loss=0.4071 lr=4.71e-04 0.06s/it
+  ep1 step7900/22741 loss=0.4063 lr=4.70e-04 0.06s/it
+  ep1 step8000/22741 loss=0.4056 lr=4.70e-04 0.06s/it
+  ep1 step8100/22741 loss=0.4047 lr=4.69e-04 0.06s/it
+  ep1 step8200/22741 loss=0.4041 lr=4.68e-04 0.06s/it
+  ep1 step8300/22741 loss=0.4033 lr=4.67e-04 0.06s/it
+  ep1 step8400/22741 loss=0.4027 lr=4.66e-04 0.06s/it
+  ep1 step8500/22741 loss=0.4022 lr=4.66e-04 0.06s/it
+  ep1 step8600/22741 loss=0.4018 lr=4.65e-04 0.06s/it
+  ep1 step8700/22741 loss=0.4011 lr=4.64e-04 0.06s/it
+  ep1 step8800/22741 loss=0.4006 lr=4.63e-04 0.06s/it
+  ep1 step8900/22741 loss=0.3998 lr=4.63e-04 0.06s/it
+  ep1 step9000/22741 loss=0.3994 lr=4.62e-04 0.06s/it
+  ep1 step9100/22741 loss=0.3988 lr=4.61e-04 0.06s/it
+  ep1 step9200/22741 loss=0.3981 lr=4.60e-04 0.06s/it
+  ep1 step9300/22741 loss=0.3974 lr=4.59e-04 0.06s/it
+  ep1 step9400/22741 loss=0.3968 lr=4.59e-04 0.06s/it
+  ep1 step9500/22741 loss=0.3963 lr=4.58e-04 0.06s/it
+  ep1 step9600/22741 loss=0.3956 lr=4.57e-04 0.06s/it
+  ep1 step9700/22741 loss=0.3952 lr=4.56e-04 0.06s/it
+  ep1 step9800/22741 loss=0.3946 lr=4.56e-04 0.06s/it
+  ep1 step9900/22741 loss=0.3941 lr=4.55e-04 0.06s/it
+  ep1 step10000/22741 loss=0.3936 lr=4.54e-04 0.06s/it
+  ep1 step10100/22741 loss=0.3930 lr=4.53e-04 0.06s/it
+  ep1 step10200/22741 loss=0.3926 lr=4.52e-04 0.06s/it
+  ep1 step10300/22741 loss=0.3921 lr=4.52e-04 0.06s/it
+  ep1 step10400/22741 loss=0.3916 lr=4.51e-04 0.06s/it
+  ep1 step10500/22741 loss=0.3910 lr=4.50e-04 0.06s/it
+  ep1 step10600/22741 loss=0.3906 lr=4.49e-04 0.06s/it
+  ep1 step10700/22741 loss=0.3902 lr=4.48e-04 0.06s/it
+  ep1 step10800/22741 loss=0.3898 lr=4.48e-04 0.06s/it
+  ep1 step10900/22741 loss=0.3896 lr=4.47e-04 0.06s/it
+  ep1 step11000/22741 loss=0.3890 lr=4.46e-04 0.06s/it
+  ep1 step11100/22741 loss=0.3886 lr=4.45e-04 0.06s/it
+  ep1 step11200/22741 loss=0.3883 lr=4.45e-04 0.06s/it
+  ep1 step11300/22741 loss=0.3878 lr=4.44e-04 0.06s/it
+  ep1 step11400/22741 loss=0.3874 lr=4.43e-04 0.06s/it
+  ep1 step11500/22741 loss=0.3871 lr=4.42e-04 0.06s/it
+  ep1 step11600/22741 loss=0.3867 lr=4.41e-04 0.06s/it
+  ep1 step11700/22741 loss=0.3862 lr=4.41e-04 0.06s/it
+  ep1 step11800/22741 loss=0.3858 lr=4.40e-04 0.06s/it
+  ep1 step11900/22741 loss=0.3855 lr=4.39e-04 0.06s/it
+  ep1 step12000/22741 loss=0.3850 lr=4.38e-04 0.06s/it
+  ep1 step12100/22741 loss=0.3847 lr=4.38e-04 0.06s/it
+  ep1 step12200/22741 loss=0.3843 lr=4.37e-04 0.06s/it
+  ep1 step12300/22741 loss=0.3837 lr=4.36e-04 0.06s/it
+  ep1 step12400/22741 loss=0.3832 lr=4.35e-04 0.06s/it
+  ep1 step12500/22741 loss=0.3827 lr=4.34e-04 0.06s/it
+  ep1 step12600/22741 loss=0.3822 lr=4.34e-04 0.06s/it
+  ep1 step12700/22741 loss=0.3821 lr=4.33e-04 0.06s/it
+  ep1 step12800/22741 loss=0.3816 lr=4.32e-04 0.06s/it
+  ep1 step12900/22741 loss=0.3813 lr=4.31e-04 0.06s/it
+  ep1 step13000/22741 loss=0.3810 lr=4.31e-04 0.06s/it
+  ep1 step13100/22741 loss=0.3807 lr=4.30e-04 0.06s/it
+  ep1 step13200/22741 loss=0.3804 lr=4.29e-04 0.06s/it
+  ep1 step13300/22741 loss=0.3798 lr=4.28e-04 0.06s/it
+  ep1 step13400/22741 loss=0.3796 lr=4.27e-04 0.06s/it
+  ep1 step13500/22741 loss=0.3791 lr=4.27e-04 0.06s/it
+  ep1 step13600/22741 loss=0.3787 lr=4.26e-04 0.06s/it
+  ep1 step13700/22741 loss=0.3784 lr=4.25e-04 0.06s/it
+  ep1 step13800/22741 loss=0.3780 lr=4.24e-04 0.06s/it
+  ep1 step13900/22741 loss=0.3778 lr=4.24e-04 0.06s/it
+  ep1 step14000/22741 loss=0.3775 lr=4.23e-04 0.06s/it
+  ep1 step14100/22741 loss=0.3772 lr=4.22e-04 0.06s/it
+  ep1 step14200/22741 loss=0.3767 lr=4.21e-04 0.06s/it
+  ep1 step14300/22741 loss=0.3764 lr=4.20e-04 0.06s/it
+  ep1 step14400/22741 loss=0.3761 lr=4.20e-04 0.06s/it
+  ep1 step14500/22741 loss=0.3759 lr=4.19e-04 0.06s/it
+  ep1 step14600/22741 loss=0.3756 lr=4.18e-04 0.06s/it
+  ep1 step14700/22741 loss=0.3755 lr=4.17e-04 0.06s/it
+  ep1 step14800/22741 loss=0.3753 lr=4.17e-04 0.06s/it
+  ep1 step14900/22741 loss=0.3748 lr=4.16e-04 0.06s/it
+  ep1 step15000/22741 loss=0.3745 lr=4.15e-04 0.06s/it
+  ep1 step15100/22741 loss=0.3742 lr=4.14e-04 0.06s/it
+  ep1 step15200/22741 loss=0.3739 lr=4.13e-04 0.06s/it
+  ep1 step15300/22741 loss=0.3736 lr=4.13e-04 0.06s/it
+  ep1 step15400/22741 loss=0.3731 lr=4.12e-04 0.06s/it
+  ep1 step15500/22741 loss=0.3729 lr=4.11e-04 0.06s/it
+  ep1 step15600/22741 loss=0.3726 lr=4.10e-04 0.06s/it
+  ep1 step15700/22741 loss=0.3722 lr=4.10e-04 0.06s/it
+  ep1 step15800/22741 loss=0.3718 lr=4.09e-04 0.06s/it
+  ep1 step15900/22741 loss=0.3714 lr=4.08e-04 0.06s/it
+  ep1 step16000/22741 loss=0.3713 lr=4.07e-04 0.06s/it
+  ep1 step16100/22741 loss=0.3710 lr=4.06e-04 0.06s/it
+  ep1 step16200/22741 loss=0.3706 lr=4.06e-04 0.06s/it
+  ep1 step16300/22741 loss=0.3701 lr=4.05e-04 0.06s/it
+  ep1 step16400/22741 loss=0.3700 lr=4.04e-04 0.06s/it
+  ep1 step16500/22741 loss=0.3696 lr=4.03e-04 0.06s/it
+  ep1 step16600/22741 loss=0.3692 lr=4.02e-04 0.06s/it
+  ep1 step16700/22741 loss=0.3691 lr=4.02e-04 0.06s/it
+  ep1 step16800/22741 loss=0.3688 lr=4.01e-04 0.06s/it
+  ep1 step16900/22741 loss=0.3686 lr=4.00e-04 0.06s/it
+  ep1 step17000/22741 loss=0.3684 lr=3.99e-04 0.06s/it
+  ep1 step17100/22741 loss=0.3680 lr=3.99e-04 0.06s/it
+  ep1 step17200/22741 loss=0.3678 lr=3.98e-04 0.06s/it
+  ep1 step17300/22741 loss=0.3676 lr=3.97e-04 0.06s/it
+  ep1 step17400/22741 loss=0.3673 lr=3.96e-04 0.06s/it
+  ep1 step17500/22741 loss=0.3670 lr=3.95e-04 0.06s/it
+  ep1 step17600/22741 loss=0.3667 lr=3.95e-04 0.06s/it
+  ep1 step17700/22741 loss=0.3663 lr=3.94e-04 0.06s/it
+  ep1 step17800/22741 loss=0.3661 lr=3.93e-04 0.06s/it
+  ep1 step17900/22741 loss=0.3658 lr=3.92e-04 0.06s/it
+  ep1 step18000/22741 loss=0.3656 lr=3.92e-04 0.06s/it
+  ep1 step18100/22741 loss=0.3653 lr=3.91e-04 0.06s/it
+  ep1 step18200/22741 loss=0.3650 lr=3.90e-04 0.06s/it
+  ep1 step18300/22741 loss=0.3649 lr=3.89e-04 0.06s/it
+  ep1 step18400/22741 loss=0.3646 lr=3.88e-04 0.06s/it
+  ep1 step18500/22741 loss=0.3644 lr=3.88e-04 0.06s/it
+  ep1 step18600/22741 loss=0.3642 lr=3.87e-04 0.06s/it
+  ep1 step18700/22741 loss=0.3640 lr=3.86e-04 0.06s/it
+  ep1 step18800/22741 loss=0.3638 lr=3.85e-04 0.06s/it
+  ep1 step18900/22741 loss=0.3637 lr=3.85e-04 0.06s/it
+  ep1 step19000/22741 loss=0.3635 lr=3.84e-04 0.06s/it
+  ep1 step19100/22741 loss=0.3632 lr=3.83e-04 0.06s/it
+  ep1 step19200/22741 loss=0.3630 lr=3.82e-04 0.06s/it
+  ep1 step19300/22741 loss=0.3628 lr=3.81e-04 0.06s/it
+  ep1 step19400/22741 loss=0.3625 lr=3.81e-04 0.06s/it
+  ep1 step19500/22741 loss=0.3623 lr=3.80e-04 0.06s/it
+  ep1 step19600/22741 loss=0.3620 lr=3.79e-04 0.06s/it
+  ep1 step19700/22741 loss=0.3619 lr=3.78e-04 0.06s/it
+  ep1 step19800/22741 loss=0.3617 lr=3.78e-04 0.06s/it
+  ep1 step19900/22741 loss=0.3615 lr=3.77e-04 0.06s/it
+  ep1 step20000/22741 loss=0.3614 lr=3.76e-04 0.06s/it
+  ep1 step20100/22741 loss=0.3612 lr=3.75e-04 0.06s/it
+  ep1 step20200/22741 loss=0.3611 lr=3.74e-04 0.06s/it
+  ep1 step20300/22741 loss=0.3607 lr=3.74e-04 0.06s/it
+  ep1 step20400/22741 loss=0.3604 lr=3.73e-04 0.06s/it
+  ep1 step20500/22741 loss=0.3602 lr=3.72e-04 0.06s/it
+  ep1 step20600/22741 loss=0.3599 lr=3.71e-04 0.06s/it
+  ep1 step20700/22741 loss=0.3598 lr=3.71e-04 0.06s/it
+  ep1 step20800/22741 loss=0.3596 lr=3.70e-04 0.06s/it
+  ep1 step20900/22741 loss=0.3593 lr=3.69e-04 0.06s/it
+  ep1 step21000/22741 loss=0.3590 lr=3.68e-04 0.06s/it
+  ep1 step21100/22741 loss=0.3589 lr=3.67e-04 0.06s/it
+  ep1 step21200/22741 loss=0.3587 lr=3.67e-04 0.06s/it
+  ep1 step21300/22741 loss=0.3584 lr=3.66e-04 0.06s/it
+  ep1 step21400/22741 loss=0.3581 lr=3.65e-04 0.06s/it
+  ep1 step21500/22741 loss=0.3579 lr=3.64e-04 0.06s/it
+  ep1 step21600/22741 loss=0.3577 lr=3.64e-04 0.06s/it
+  ep1 step21700/22741 loss=0.3574 lr=3.63e-04 0.06s/it
+  ep1 step21800/22741 loss=0.3572 lr=3.62e-04 0.06s/it
+  ep1 step21900/22741 loss=0.3570 lr=3.61e-04 0.06s/it
+  ep1 step22000/22741 loss=0.3568 lr=3.60e-04 0.06s/it
+  ep1 step22100/22741 loss=0.3566 lr=3.60e-04 0.06s/it
+  ep1 step22200/22741 loss=0.3564 lr=3.59e-04 0.06s/it
+  ep1 step22300/22741 loss=0.3562 lr=3.58e-04 0.06s/it
+  ep1 step22400/22741 loss=0.3560 lr=3.57e-04 0.06s/it
+  ep1 step22500/22741 loss=0.3559 lr=3.56e-04 0.06s/it
+  ep1 step22600/22741 loss=0.3557 lr=3.56e-04 0.06s/it
+  ep1 step22700/22741 loss=0.3556 lr=3.55e-04 0.06s/it
+[qqp_roberta-base_lora_r8_qv_s0] epoch 1: {"validation": 0.8727677467227306} score=0.8728 (1451s)
+  ep2 step100/22741 loss=0.3103 lr=3.54e-04 0.06s/it
+  ep2 step200/22741 loss=0.2967 lr=3.53e-04 0.06s/it
+  ep2 step300/22741 loss=0.2955 lr=3.52e-04 0.07s/it
+  ep2 step400/22741 loss=0.2978 lr=3.51e-04 0.06s/it
+  ep2 step500/22741 loss=0.3009 lr=3.51e-04 0.06s/it
+  ep2 step600/22741 loss=0.3016 lr=3.50e-04 0.06s/it
+  ep2 step700/22741 loss=0.3016 lr=3.49e-04 0.06s/it
+  ep2 step800/22741 loss=0.3029 lr=3.48e-04 0.06s/it
+  ep2 step900/22741 loss=0.3031 lr=3.48e-04 0.06s/it
+  ep2 step1000/22741 loss=0.3025 lr=3.47e-04 0.06s/it
+  ep2 step1100/22741 loss=0.3016 lr=3.46e-04 0.06s/it
+  ep2 step1200/22741 loss=0.3043 lr=3.45e-04 0.06s/it
+  ep2 step1300/22741 loss=0.3028 lr=3.44e-04 0.06s/it
+  ep2 step1400/22741 loss=0.3039 lr=3.44e-04 0.06s/it
+  ep2 step1500/22741 loss=0.3018 lr=3.43e-04 0.06s/it
+  ep2 step1600/22741 loss=0.3028 lr=3.42e-04 0.06s/it
+  ep2 step1700/22741 loss=0.3022 lr=3.41e-04 0.06s/it
+  ep2 step1800/22741 loss=0.3016 lr=3.41e-04 0.06s/it
+  ep2 step1900/22741 loss=0.3019 lr=3.40e-04 0.06s/it
+  ep2 step2000/22741 loss=0.3026 lr=3.39e-04 0.06s/it
+  ep2 step2100/22741 loss=0.3031 lr=3.38e-04 0.06s/it
+  ep2 step2200/22741 loss=0.3034 lr=3.37e-04 0.06s/it
+  ep2 step2300/22741 loss=0.3034 lr=3.37e-04 0.06s/it
+  ep2 step2400/22741 loss=0.3030 lr=3.36e-04 0.06s/it
+  ep2 step2500/22741 loss=0.3033 lr=3.35e-04 0.06s/it
+  ep2 step2600/22741 loss=0.3023 lr=3.34e-04 0.06s/it
+  ep2 step2700/22741 loss=0.3022 lr=3.34e-04 0.06s/it
+  ep2 step2800/22741 loss=0.3026 lr=3.33e-04 0.06s/it
+  ep2 step2900/22741 loss=0.3022 lr=3.32e-04 0.06s/it
+  ep2 step3000/22741 loss=0.3030 lr=3.31e-04 0.06s/it
+  ep2 step3100/22741 loss=0.3029 lr=3.30e-04 0.06s/it
+  ep2 step3200/22741 loss=0.3028 lr=3.30e-04 0.06s/it
+  ep2 step3300/22741 loss=0.3022 lr=3.29e-04 0.06s/it
+  ep2 step3400/22741 loss=0.3026 lr=3.28e-04 0.06s/it
+  ep2 step3500/22741 loss=0.3026 lr=3.27e-04 0.06s/it
+  ep2 step3600/22741 loss=0.3027 lr=3.27e-04 0.06s/it
+  ep2 step3700/22741 loss=0.3025 lr=3.26e-04 0.06s/it
+  ep2 step3800/22741 loss=0.3029 lr=3.25e-04 0.06s/it
+  ep2 step3900/22741 loss=0.3035 lr=3.24e-04 0.06s/it
+  ep2 step4000/22741 loss=0.3039 lr=3.23e-04 0.06s/it
+  ep2 step4100/22741 loss=0.3038 lr=3.23e-04 0.06s/it
+  ep2 step4200/22741 loss=0.3038 lr=3.22e-04 0.06s/it
+  ep2 step4300/22741 loss=0.3038 lr=3.21e-04 0.06s/it
+  ep2 step4400/22741 loss=0.3035 lr=3.20e-04 0.06s/it
+  ep2 step4500/22741 loss=0.3029 lr=3.20e-04 0.06s/it
+  ep2 step4600/22741 loss=0.3028 lr=3.19e-04 0.06s/it
+  ep2 step4700/22741 loss=0.3031 lr=3.18e-04 0.06s/it
+  ep2 step4800/22741 loss=0.3035 lr=3.17e-04 0.06s/it
+  ep2 step4900/22741 loss=0.3035 lr=3.16e-04 0.06s/it
+  ep2 step5000/22741 loss=0.3036 lr=3.16e-04 0.06s/it
+  ep2 step5100/22741 loss=0.3032 lr=3.15e-04 0.06s/it
+  ep2 step5200/22741 loss=0.3032 lr=3.14e-04 0.06s/it
+  ep2 step5300/22741 loss=0.3029 lr=3.13e-04 0.06s/it
+  ep2 step5400/22741 loss=0.3029 lr=3.13e-04 0.06s/it
+  ep2 step5500/22741 loss=0.3028 lr=3.12e-04 0.06s/it
+  ep2 step5600/22741 loss=0.3025 lr=3.11e-04 0.06s/it
+  ep2 step5700/22741 loss=0.3024 lr=3.10e-04 0.06s/it
+  ep2 step5800/22741 loss=0.3027 lr=3.09e-04 0.06s/it
+  ep2 step5900/22741 loss=0.3027 lr=3.09e-04 0.06s/it
+  ep2 step6000/22741 loss=0.3026 lr=3.08e-04 0.06s/it
+  ep2 step6100/22741 loss=0.3028 lr=3.07e-04 0.06s/it
+  ep2 step6200/22741 loss=0.3024 lr=3.06e-04 0.06s/it
+  ep2 step6300/22741 loss=0.3020 lr=3.05e-04 0.06s/it
+  ep2 step6400/22741 loss=0.3021 lr=3.05e-04 0.06s/it
+  ep2 step6500/22741 loss=0.3020 lr=3.04e-04 0.06s/it
+  ep2 step6600/22741 loss=0.3017 lr=3.03e-04 0.06s/it
+  ep2 step6700/22741 loss=0.3016 lr=3.02e-04 0.06s/it
+  ep2 step6800/22741 loss=0.3015 lr=3.02e-04 0.06s/it
+  ep2 step6900/22741 loss=0.3021 lr=3.01e-04 0.06s/it
+  ep2 step7000/22741 loss=0.3021 lr=3.00e-04 0.06s/it
+  ep2 step7100/22741 loss=0.3023 lr=2.99e-04 0.06s/it
+  ep2 step7200/22741 loss=0.3022 lr=2.98e-04 0.06s/it
+  ep2 step7300/22741 loss=0.3021 lr=2.98e-04 0.06s/it
+  ep2 step7400/22741 loss=0.3020 lr=2.97e-04 0.06s/it
+  ep2 step7500/22741 loss=0.3015 lr=2.96e-04 0.06s/it
+  ep2 step7600/22741 loss=0.3013 lr=2.95e-04 0.06s/it
+  ep2 step7700/22741 loss=0.3016 lr=2.95e-04 0.06s/it
+  ep2 step7800/22741 loss=0.3017 lr=2.94e-04 0.06s/it
+  ep2 step7900/22741 loss=0.3015 lr=2.93e-04 0.06s/it
+  ep2 step8000/22741 loss=0.3014 lr=2.92e-04 0.06s/it
+  ep2 step8100/22741 loss=0.3015 lr=2.91e-04 0.06s/it
+  ep2 step8200/22741 loss=0.3016 lr=2.91e-04 0.06s/it
+  ep2 step8300/22741 loss=0.3017 lr=2.90e-04 0.06s/it
+  ep2 step8400/22741 loss=0.3016 lr=2.89e-04 0.06s/it
+  ep2 step8500/22741 loss=0.3018 lr=2.88e-04 0.06s/it
+  ep2 step8600/22741 loss=0.3020 lr=2.88e-04 0.06s/it
+  ep2 step8700/22741 loss=0.3017 lr=2.87e-04 0.06s/it
+  ep2 step8800/22741 loss=0.3017 lr=2.86e-04 0.06s/it
+  ep2 step8900/22741 loss=0.3017 lr=2.85e-04 0.06s/it
+  ep2 step9000/22741 loss=0.3017 lr=2.84e-04 0.06s/it
+  ep2 step9100/22741 loss=0.3017 lr=2.84e-04 0.06s/it
+  ep2 step9200/22741 loss=0.3015 lr=2.83e-04 0.06s/it
+  ep2 step9300/22741 loss=0.3013 lr=2.82e-04 0.06s/it
+  ep2 step9400/22741 loss=0.3012 lr=2.81e-04 0.06s/it
+  ep2 step9500/22741 loss=0.3012 lr=2.81e-04 0.06s/it
+  ep2 step9600/22741 loss=0.3011 lr=2.80e-04 0.06s/it
+  ep2 step9700/22741 loss=0.3011 lr=2.79e-04 0.06s/it
+  ep2 step9800/22741 loss=0.3010 lr=2.78e-04 0.06s/it
+  ep2 step9900/22741 loss=0.3011 lr=2.77e-04 0.06s/it
+  ep2 step10000/22741 loss=0.3009 lr=2.77e-04 0.06s/it
+  ep2 step10100/22741 loss=0.3009 lr=2.76e-04 0.06s/it
+  ep2 step10200/22741 loss=0.3006 lr=2.75e-04 0.06s/it
+  ep2 step10300/22741 loss=0.3003 lr=2.74e-04 0.06s/it
+  ep2 step10400/22741 loss=0.3003 lr=2.74e-04 0.06s/it
+  ep2 step10500/22741 loss=0.3005 lr=2.73e-04 0.06s/it
+  ep2 step10600/22741 loss=0.3003 lr=2.72e-04 0.06s/it
+  ep2 step10700/22741 loss=0.3004 lr=2.71e-04 0.06s/it
+  ep2 step10800/22741 loss=0.3005 lr=2.70e-04 0.06s/it
+  ep2 step10900/22741 loss=0.3002 lr=2.70e-04 0.06s/it
+  ep2 step11000/22741 loss=0.3004 lr=2.69e-04 0.06s/it
+  ep2 step11100/22741 loss=0.3002 lr=2.68e-04 0.06s/it
+  ep2 step11200/22741 loss=0.3002 lr=2.67e-04 0.06s/it
+  ep2 step11300/22741 loss=0.3002 lr=2.67e-04 0.06s/it
+  ep2 step11400/22741 loss=0.3001 lr=2.66e-04 0.06s/it
+  ep2 step11500/22741 loss=0.3000 lr=2.65e-04 0.06s/it
+  ep2 step11600/22741 loss=0.2998 lr=2.64e-04 0.06s/it
+  ep2 step11700/22741 loss=0.2999 lr=2.63e-04 0.06s/it
+  ep2 step11800/22741 loss=0.2999 lr=2.63e-04 0.06s/it
+  ep2 step11900/22741 loss=0.2999 lr=2.62e-04 0.06s/it
+  ep2 step12000/22741 loss=0.2998 lr=2.61e-04 0.06s/it
+  ep2 step12100/22741 loss=0.2999 lr=2.60e-04 0.06s/it
+  ep2 step12200/22741 loss=0.2998 lr=2.59e-04 0.06s/it
+  ep2 step12300/22741 loss=0.2996 lr=2.59e-04 0.06s/it
+  ep2 step12400/22741 loss=0.2996 lr=2.58e-04 0.06s/it
+  ep2 step12500/22741 loss=0.2996 lr=2.57e-04 0.06s/it
+  ep2 step12600/22741 loss=0.2997 lr=2.56e-04 0.06s/it
+  ep2 step12700/22741 loss=0.2997 lr=2.56e-04 0.06s/it
+  ep2 step12800/22741 loss=0.2996 lr=2.55e-04 0.06s/it
+  ep2 step12900/22741 loss=0.2996 lr=2.54e-04 0.06s/it
+  ep2 step13000/22741 loss=0.2995 lr=2.53e-04 0.06s/it
+  ep2 step13100/22741 loss=0.2994 lr=2.52e-04 0.06s/it
+  ep2 step13200/22741 loss=0.2993 lr=2.52e-04 0.06s/it
+  ep2 step13300/22741 loss=0.2992 lr=2.51e-04 0.06s/it
+  ep2 step13400/22741 loss=0.2992 lr=2.50e-04 0.06s/it
+  ep2 step13500/22741 loss=0.2992 lr=2.49e-04 0.06s/it
+  ep2 step13600/22741 loss=0.2992 lr=2.49e-04 0.06s/it
+  ep2 step13700/22741 loss=0.2992 lr=2.48e-04 0.06s/it
+  ep2 step13800/22741 loss=0.2992 lr=2.47e-04 0.06s/it
+  ep2 step13900/22741 loss=0.2992 lr=2.46e-04 0.06s/it
+  ep2 step14000/22741 loss=0.2991 lr=2.45e-04 0.06s/it
+  ep2 step14100/22741 loss=0.2989 lr=2.45e-04 0.06s/it
+  ep2 step14200/22741 loss=0.2989 lr=2.44e-04 0.06s/it
+  ep2 step14300/22741 loss=0.2988 lr=2.43e-04 0.06s/it
+  ep2 step14400/22741 loss=0.2988 lr=2.42e-04 0.06s/it
+  ep2 step14500/22741 loss=0.2986 lr=2.42e-04 0.06s/it
+  ep2 step14600/22741 loss=0.2984 lr=2.41e-04 0.06s/it
+  ep2 step14700/22741 loss=0.2982 lr=2.40e-04 0.06s/it
+  ep2 step14800/22741 loss=0.2980 lr=2.39e-04 0.06s/it
+  ep2 step14900/22741 loss=0.2980 lr=2.38e-04 0.06s/it
+  ep2 step15000/22741 loss=0.2978 lr=2.38e-04 0.06s/it
+  ep2 step15100/22741 loss=0.2978 lr=2.37e-04 0.06s/it
+  ep2 step15200/22741 loss=0.2978 lr=2.36e-04 0.06s/it
+  ep2 step15300/22741 loss=0.2979 lr=2.35e-04 0.06s/it
+  ep2 step15400/22741 loss=0.2979 lr=2.35e-04 0.06s/it
+  ep2 step15500/22741 loss=0.2978 lr=2.34e-04 0.06s/it
+  ep2 step15600/22741 loss=0.2978 lr=2.33e-04 0.06s/it
+  ep2 step15700/22741 loss=0.2977 lr=2.32e-04 0.06s/it
+  ep2 step15800/22741 loss=0.2976 lr=2.31e-04 0.06s/it
+  ep2 step15900/22741 loss=0.2975 lr=2.31e-04 0.06s/it
+  ep2 step16000/22741 loss=0.2974 lr=2.30e-04 0.06s/it
+  ep2 step16100/22741 loss=0.2974 lr=2.29e-04 0.06s/it
+  ep2 step16200/22741 loss=0.2974 lr=2.28e-04 0.06s/it
+  ep2 step16300/22741 loss=0.2972 lr=2.28e-04 0.06s/it
+  ep2 step16400/22741 loss=0.2971 lr=2.27e-04 0.06s/it
+  ep2 step16500/22741 loss=0.2969 lr=2.26e-04 0.06s/it
+  ep2 step16600/22741 loss=0.2969 lr=2.25e-04 0.06s/it
+  ep2 step16700/22741 loss=0.2969 lr=2.24e-04 0.06s/it
+  ep2 step16800/22741 loss=0.2969 lr=2.24e-04 0.06s/it
+  ep2 step16900/22741 loss=0.2968 lr=2.23e-04 0.06s/it
+  ep2 step17000/22741 loss=0.2967 lr=2.22e-04 0.06s/it
+  ep2 step17100/22741 loss=0.2966 lr=2.21e-04 0.06s/it
+  ep2 step17200/22741 loss=0.2966 lr=2.21e-04 0.06s/it
+  ep2 step17300/22741 loss=0.2966 lr=2.20e-04 0.06s/it
+  ep2 step17400/22741 loss=0.2965 lr=2.19e-04 0.06s/it
+  ep2 step17500/22741 loss=0.2965 lr=2.18e-04 0.06s/it
+  ep2 step17600/22741 loss=0.2965 lr=2.17e-04 0.06s/it
+  ep2 step17700/22741 loss=0.2964 lr=2.17e-04 0.06s/it
+  ep2 step17800/22741 loss=0.2964 lr=2.16e-04 0.06s/it
+  ep2 step17900/22741 loss=0.2962 lr=2.15e-04 0.06s/it
+  ep2 step18000/22741 loss=0.2962 lr=2.14e-04 0.06s/it
+  ep2 step18100/22741 loss=0.2961 lr=2.13e-04 0.06s/it
+  ep2 step18200/22741 loss=0.2959 lr=2.13e-04 0.06s/it
+  ep2 step18300/22741 loss=0.2959 lr=2.12e-04 0.06s/it
+  ep2 step18400/22741 loss=0.2959 lr=2.11e-04 0.06s/it
+  ep2 step18500/22741 loss=0.2958 lr=2.10e-04 0.06s/it
+  ep2 step18600/22741 loss=0.2958 lr=2.10e-04 0.06s/it
+  ep2 step18700/22741 loss=0.2957 lr=2.09e-04 0.06s/it
+  ep2 step18800/22741 loss=0.2956 lr=2.08e-04 0.06s/it
+  ep2 step18900/22741 loss=0.2956 lr=2.07e-04 0.06s/it
+  ep2 step19000/22741 loss=0.2955 lr=2.06e-04 0.06s/it
+  ep2 step19100/22741 loss=0.2954 lr=2.06e-04 0.06s/it
+  ep2 step19200/22741 loss=0.2954 lr=2.05e-04 0.06s/it
+  ep2 step19300/22741 loss=0.2953 lr=2.04e-04 0.06s/it
+  ep2 step19400/22741 loss=0.2954 lr=2.03e-04 0.06s/it
+  ep2 step19500/22741 loss=0.2954 lr=2.03e-04 0.06s/it
+  ep2 step19600/22741 loss=0.2955 lr=2.02e-04 0.06s/it
+  ep2 step19700/22741 loss=0.2954 lr=2.01e-04 0.06s/it
+  ep2 step19800/22741 loss=0.2954 lr=2.00e-04 0.06s/it
+  ep2 step19900/22741 loss=0.2955 lr=1.99e-04 0.06s/it
+  ep2 step20000/22741 loss=0.2953 lr=1.99e-04 0.06s/it
+  ep2 step20100/22741 loss=0.2952 lr=1.98e-04 0.06s/it
+  ep2 step20200/22741 loss=0.2952 lr=1.97e-04 0.06s/it
+  ep2 step20300/22741 loss=0.2952 lr=1.96e-04 0.06s/it
+  ep2 step20400/22741 loss=0.2952 lr=1.96e-04 0.06s/it
+  ep2 step20500/22741 loss=0.2952 lr=1.95e-04 0.06s/it
+  ep2 step20600/22741 loss=0.2953 lr=1.94e-04 0.06s/it
+  ep2 step20700/22741 loss=0.2953 lr=1.93e-04 0.06s/it
+  ep2 step20800/22741 loss=0.2952 lr=1.92e-04 0.06s/it
+  ep2 step20900/22741 loss=0.2952 lr=1.92e-04 0.06s/it
+  ep2 step21000/22741 loss=0.2951 lr=1.91e-04 0.06s/it
+  ep2 step21100/22741 loss=0.2951 lr=1.90e-04 0.06s/it
+  ep2 step21200/22741 loss=0.2950 lr=1.89e-04 0.06s/it
+  ep2 step21300/22741 loss=0.2950 lr=1.89e-04 0.06s/it
+  ep2 step21400/22741 loss=0.2950 lr=1.88e-04 0.06s/it
+  ep2 step21500/22741 loss=0.2949 lr=1.87e-04 0.06s/it
+  ep2 step21600/22741 loss=0.2948 lr=1.86e-04 0.06s/it
+  ep2 step21700/22741 loss=0.2947 lr=1.85e-04 0.06s/it
+  ep2 step21800/22741 loss=0.2947 lr=1.85e-04 0.06s/it
+  ep2 step21900/22741 loss=0.2947 lr=1.84e-04 0.06s/it
+  ep2 step22000/22741 loss=0.2947 lr=1.83e-04 0.06s/it
+  ep2 step22100/22741 loss=0.2947 lr=1.82e-04 0.06s/it
+  ep2 step22200/22741 loss=0.2947 lr=1.82e-04 0.06s/it
+  ep2 step22300/22741 loss=0.2946 lr=1.81e-04 0.06s/it
+  ep2 step22400/22741 loss=0.2945 lr=1.80e-04 0.06s/it
+  ep2 step22500/22741 loss=0.2943 lr=1.79e-04 0.06s/it
+  ep2 step22600/22741 loss=0.2943 lr=1.78e-04 0.06s/it
+  ep2 step22700/22741 loss=0.2943 lr=1.78e-04 0.06s/it
+[qqp_roberta-base_lora_r8_qv_s0] epoch 2: {"validation": 0.8763541924313628} score=0.8764 (1460s)
+  ep3 step100/22741 loss=0.2770 lr=1.77e-04 0.06s/it
+  ep3 step200/22741 loss=0.2783 lr=1.76e-04 0.06s/it
+  ep3 step300/22741 loss=0.2747 lr=1.75e-04 0.06s/it
+  ep3 step400/22741 loss=0.2747 lr=1.74e-04 0.06s/it
+  ep3 step500/22741 loss=0.2741 lr=1.73e-04 0.06s/it
+  ep3 step600/22741 loss=0.2740 lr=1.73e-04 0.06s/it
+  ep3 step700/22741 loss=0.2722 lr=1.72e-04 0.06s/it
+  ep3 step800/22741 loss=0.2729 lr=1.71e-04 0.06s/it
+  ep3 step900/22741 loss=0.2746 lr=1.70e-04 0.06s/it
+  ep3 step1000/22741 loss=0.2753 lr=1.70e-04 0.06s/it
+  ep3 step1100/22741 loss=0.2759 lr=1.69e-04 0.06s/it
+  ep3 step1200/22741 loss=0.2766 lr=1.68e-04 0.06s/it
+  ep3 step1300/22741 loss=0.2754 lr=1.67e-04 0.06s/it
+  ep3 step1400/22741 loss=0.2744 lr=1.66e-04 0.06s/it
+  ep3 step1500/22741 loss=0.2757 lr=1.66e-04 0.06s/it
+  ep3 step1600/22741 loss=0.2759 lr=1.65e-04 0.06s/it
+  ep3 step1700/22741 loss=0.2751 lr=1.64e-04 0.06s/it
+  ep3 step1800/22741 loss=0.2750 lr=1.63e-04 0.06s/it
+  ep3 step1900/22741 loss=0.2745 lr=1.62e-04 0.06s/it
+  ep3 step2000/22741 loss=0.2755 lr=1.62e-04 0.06s/it
+  ep3 step2100/22741 loss=0.2749 lr=1.61e-04 0.06s/it
+  ep3 step2200/22741 loss=0.2745 lr=1.60e-04 0.06s/it
+  ep3 step2300/22741 loss=0.2750 lr=1.59e-04 0.06s/it
+  ep3 step2400/22741 loss=0.2752 lr=1.59e-04 0.06s/it
+  ep3 step2500/22741 loss=0.2753 lr=1.58e-04 0.06s/it
+  ep3 step2600/22741 loss=0.2753 lr=1.57e-04 0.06s/it
+  ep3 step2700/22741 loss=0.2742 lr=1.56e-04 0.06s/it
+  ep3 step2800/22741 loss=0.2742 lr=1.55e-04 0.06s/it
+  ep3 step2900/22741 loss=0.2737 lr=1.55e-04 0.06s/it
+  ep3 step3000/22741 loss=0.2730 lr=1.54e-04 0.06s/it
+  ep3 step3100/22741 loss=0.2728 lr=1.53e-04 0.06s/it
+  ep3 step3200/22741 loss=0.2721 lr=1.52e-04 0.06s/it
+  ep3 step3300/22741 loss=0.2730 lr=1.52e-04 0.06s/it
+  ep3 step3400/22741 loss=0.2726 lr=1.51e-04 0.06s/it
+  ep3 step3500/22741 loss=0.2729 lr=1.50e-04 0.06s/it
+  ep3 step3600/22741 loss=0.2729 lr=1.49e-04 0.06s/it
+  ep3 step3700/22741 loss=0.2735 lr=1.48e-04 0.06s/it
+  ep3 step3800/22741 loss=0.2730 lr=1.48e-04 0.06s/it
+  ep3 step3900/22741 loss=0.2732 lr=1.47e-04 0.06s/it
+  ep3 step4000/22741 loss=0.2733 lr=1.46e-04 0.06s/it
+  ep3 step4100/22741 loss=0.2732 lr=1.45e-04 0.06s/it
+  ep3 step4200/22741 loss=0.2738 lr=1.45e-04 0.06s/it
+  ep3 step4300/22741 loss=0.2734 lr=1.44e-04 0.06s/it
+  ep3 step4400/22741 loss=0.2732 lr=1.43e-04 0.06s/it
+  ep3 step4500/22741 loss=0.2733 lr=1.42e-04 0.06s/it
+  ep3 step4600/22741 loss=0.2730 lr=1.41e-04 0.06s/it
+  ep3 step4700/22741 loss=0.2729 lr=1.41e-04 0.06s/it
+  ep3 step4800/22741 loss=0.2732 lr=1.40e-04 0.06s/it
+  ep3 step4900/22741 loss=0.2735 lr=1.39e-04 0.06s/it
+  ep3 step5000/22741 loss=0.2729 lr=1.38e-04 0.06s/it
+  ep3 step5100/22741 loss=0.2731 lr=1.38e-04 0.06s/it
+  ep3 step5200/22741 loss=0.2727 lr=1.37e-04 0.06s/it
+  ep3 step5300/22741 loss=0.2730 lr=1.36e-04 0.06s/it
+  ep3 step5400/22741 loss=0.2726 lr=1.35e-04 0.06s/it
+  ep3 step5500/22741 loss=0.2729 lr=1.34e-04 0.06s/it
+  ep3 step5600/22741 loss=0.2728 lr=1.34e-04 0.06s/it
+  ep3 step5700/22741 loss=0.2730 lr=1.33e-04 0.06s/it
+  ep3 step5800/22741 loss=0.2734 lr=1.32e-04 0.06s/it
+  ep3 step5900/22741 loss=0.2733 lr=1.31e-04 0.06s/it
+  ep3 step6000/22741 loss=0.2730 lr=1.31e-04 0.06s/it
+  ep3 step6100/22741 loss=0.2729 lr=1.30e-04 0.06s/it
+  ep3 step6200/22741 loss=0.2729 lr=1.29e-04 0.06s/it
+  ep3 step6300/22741 loss=0.2728 lr=1.28e-04 0.06s/it
+  ep3 step6400/22741 loss=0.2728 lr=1.27e-04 0.06s/it
+  ep3 step6500/22741 loss=0.2731 lr=1.27e-04 0.06s/it
+  ep3 step6600/22741 loss=0.2727 lr=1.26e-04 0.06s/it
+  ep3 step6700/22741 loss=0.2727 lr=1.25e-04 0.06s/it
+  ep3 step6800/22741 loss=0.2727 lr=1.24e-04 0.06s/it
+  ep3 step6900/22741 loss=0.2729 lr=1.24e-04 0.06s/it
+  ep3 step7000/22741 loss=0.2728 lr=1.23e-04 0.06s/it
+  ep3 step7100/22741 loss=0.2726 lr=1.22e-04 0.06s/it
+  ep3 step7200/22741 loss=0.2725 lr=1.21e-04 0.06s/it
+  ep3 step7300/22741 loss=0.2726 lr=1.20e-04 0.06s/it
+  ep3 step7400/22741 loss=0.2726 lr=1.20e-04 0.06s/it
+  ep3 step7500/22741 loss=0.2727 lr=1.19e-04 0.06s/it
+  ep3 step7600/22741 loss=0.2727 lr=1.18e-04 0.06s/it
+  ep3 step7700/22741 loss=0.2726 lr=1.17e-04 0.06s/it
+  ep3 step7800/22741 loss=0.2726 lr=1.16e-04 0.06s/it
+  ep3 step7900/22741 loss=0.2726 lr=1.16e-04 0.06s/it
+  ep3 step8000/22741 loss=0.2726 lr=1.15e-04 0.06s/it
+  ep3 step8100/22741 loss=0.2724 lr=1.14e-04 0.06s/it
+  ep3 step8200/22741 loss=0.2723 lr=1.13e-04 0.06s/it
+  ep3 step8300/22741 loss=0.2723 lr=1.13e-04 0.06s/it
+  ep3 step8400/22741 loss=0.2723 lr=1.12e-04 0.06s/it
+  ep3 step8500/22741 loss=0.2722 lr=1.11e-04 0.06s/it
+  ep3 step8600/22741 loss=0.2720 lr=1.10e-04 0.06s/it
+  ep3 step8700/22741 loss=0.2717 lr=1.09e-04 0.06s/it
+  ep3 step8800/22741 loss=0.2718 lr=1.09e-04 0.06s/it
+  ep3 step8900/22741 loss=0.2720 lr=1.08e-04 0.06s/it
+  ep3 step9000/22741 loss=0.2720 lr=1.07e-04 0.06s/it
+  ep3 step9100/22741 loss=0.2720 lr=1.06e-04 0.06s/it
+  ep3 step9200/22741 loss=0.2719 lr=1.06e-04 0.06s/it
+  ep3 step9300/22741 loss=0.2718 lr=1.05e-04 0.06s/it
+  ep3 step9400/22741 loss=0.2717 lr=1.04e-04 0.06s/it
+  ep3 step9500/22741 loss=0.2718 lr=1.03e-04 0.06s/it
+  ep3 step9600/22741 loss=0.2717 lr=1.02e-04 0.06s/it
+  ep3 step9700/22741 loss=0.2716 lr=1.02e-04 0.06s/it
+  ep3 step9800/22741 loss=0.2719 lr=1.01e-04 0.06s/it
+  ep3 step9900/22741 loss=0.2719 lr=1.00e-04 0.06s/it
+  ep3 step10000/22741 loss=0.2718 lr=9.93e-05 0.06s/it
+  ep3 step10100/22741 loss=0.2716 lr=9.86e-05 0.06s/it
+  ep3 step10200/22741 loss=0.2715 lr=9.78e-05 0.06s/it
+  ep3 step10300/22741 loss=0.2712 lr=9.70e-05 0.06s/it
+  ep3 step10400/22741 loss=0.2710 lr=9.62e-05 0.06s/it
+  ep3 step10500/22741 loss=0.2712 lr=9.54e-05 0.06s/it
+  ep3 step10600/22741 loss=0.2710 lr=9.47e-05 0.06s/it
+  ep3 step10700/22741 loss=0.2711 lr=9.39e-05 0.06s/it
+  ep3 step10800/22741 loss=0.2708 lr=9.31e-05 0.06s/it
+  ep3 step10900/22741 loss=0.2710 lr=9.23e-05 0.06s/it
+  ep3 step11000/22741 loss=0.2709 lr=9.15e-05 0.06s/it
+  ep3 step11100/22741 loss=0.2705 lr=9.08e-05 0.06s/it
+  ep3 step11200/22741 loss=0.2704 lr=9.00e-05 0.06s/it
+  ep3 step11300/22741 loss=0.2702 lr=8.92e-05 0.06s/it
+  ep3 step11400/22741 loss=0.2702 lr=8.84e-05 0.06s/it
+  ep3 step11500/22741 loss=0.2698 lr=8.76e-05 0.06s/it
+  ep3 step11600/22741 loss=0.2698 lr=8.69e-05 0.06s/it
+  ep3 step11700/22741 loss=0.2699 lr=8.61e-05 0.06s/it
+  ep3 step11800/22741 loss=0.2698 lr=8.53e-05 0.06s/it
+  ep3 step11900/22741 loss=0.2697 lr=8.45e-05 0.06s/it
+  ep3 step12000/22741 loss=0.2697 lr=8.37e-05 0.06s/it
+  ep3 step12100/22741 loss=0.2696 lr=8.30e-05 0.06s/it
+  ep3 step12200/22741 loss=0.2697 lr=8.22e-05 0.06s/it
+  ep3 step12300/22741 loss=0.2698 lr=8.14e-05 0.06s/it
+  ep3 step12400/22741 loss=0.2694 lr=8.06e-05 0.06s/it
+  ep3 step12500/22741 loss=0.2696 lr=7.98e-05 0.06s/it
+  ep3 step12600/22741 loss=0.2695 lr=7.91e-05 0.06s/it
+  ep3 step12700/22741 loss=0.2695 lr=7.83e-05 0.06s/it
+  ep3 step12800/22741 loss=0.2695 lr=7.75e-05 0.06s/it
+  ep3 step12900/22741 loss=0.2694 lr=7.67e-05 0.06s/it
+  ep3 step13000/22741 loss=0.2696 lr=7.59e-05 0.06s/it
+  ep3 step13100/22741 loss=0.2697 lr=7.52e-05 0.06s/it
+  ep3 step13200/22741 loss=0.2697 lr=7.44e-05 0.06s/it
+  ep3 step13300/22741 loss=0.2697 lr=7.36e-05 0.06s/it
+  ep3 step13400/22741 loss=0.2694 lr=7.28e-05 0.06s/it
+  ep3 step13500/22741 loss=0.2693 lr=7.20e-05 0.06s/it
+  ep3 step13600/22741 loss=0.2693 lr=7.13e-05 0.06s/it
+  ep3 step13700/22741 loss=0.2695 lr=7.05e-05 0.06s/it
+  ep3 step13800/22741 loss=0.2695 lr=6.97e-05 0.06s/it
+  ep3 step13900/22741 loss=0.2694 lr=6.89e-05 0.06s/it
+  ep3 step14000/22741 loss=0.2694 lr=6.82e-05 0.06s/it
+  ep3 step14100/22741 loss=0.2693 lr=6.74e-05 0.06s/it
+  ep3 step14200/22741 loss=0.2693 lr=6.66e-05 0.06s/it
+  ep3 step14300/22741 loss=0.2694 lr=6.58e-05 0.06s/it
+  ep3 step14400/22741 loss=0.2693 lr=6.50e-05 0.06s/it
+  ep3 step14500/22741 loss=0.2693 lr=6.43e-05 0.06s/it
+  ep3 step14600/22741 loss=0.2694 lr=6.35e-05 0.06s/it
+  ep3 step14700/22741 loss=0.2692 lr=6.27e-05 0.06s/it
+  ep3 step14800/22741 loss=0.2693 lr=6.19e-05 0.06s/it
+  ep3 step14900/22741 loss=0.2693 lr=6.11e-05 0.06s/it
+  ep3 step15000/22741 loss=0.2693 lr=6.04e-05 0.06s/it
+  ep3 step15100/22741 loss=0.2693 lr=5.96e-05 0.06s/it
+  ep3 step15200/22741 loss=0.2692 lr=5.88e-05 0.06s/it
+  ep3 step15300/22741 loss=0.2693 lr=5.80e-05 0.06s/it
+  ep3 step15400/22741 loss=0.2693 lr=5.72e-05 0.06s/it
+  ep3 step15500/22741 loss=0.2692 lr=5.65e-05 0.06s/it
+  ep3 step15600/22741 loss=0.2692 lr=5.57e-05 0.06s/it
+  ep3 step15700/22741 loss=0.2690 lr=5.49e-05 0.06s/it
+  ep3 step15800/22741 loss=0.2688 lr=5.41e-05 0.06s/it
+  ep3 step15900/22741 loss=0.2688 lr=5.33e-05 0.06s/it
+  ep3 step16000/22741 loss=0.2686 lr=5.26e-05 0.06s/it
+  ep3 step16100/22741 loss=0.2686 lr=5.18e-05 0.06s/it
+  ep3 step16200/22741 loss=0.2685 lr=5.10e-05 0.06s/it
+  ep3 step16300/22741 loss=0.2685 lr=5.02e-05 0.06s/it
+  ep3 step16400/22741 loss=0.2686 lr=4.94e-05 0.06s/it
+  ep3 step16500/22741 loss=0.2686 lr=4.87e-05 0.06s/it
+  ep3 step16600/22741 loss=0.2685 lr=4.79e-05 0.06s/it
+  ep3 step16700/22741 loss=0.2683 lr=4.71e-05 0.06s/it
+  ep3 step16800/22741 loss=0.2682 lr=4.63e-05 0.06s/it
+  ep3 step16900/22741 loss=0.2682 lr=4.55e-05 0.06s/it
+  ep3 step17000/22741 loss=0.2682 lr=4.48e-05 0.06s/it
+  ep3 step17100/22741 loss=0.2681 lr=4.40e-05 0.06s/it
+  ep3 step17200/22741 loss=0.2681 lr=4.32e-05 0.06s/it
+  ep3 step17300/22741 loss=0.2682 lr=4.24e-05 0.06s/it
+  ep3 step17400/22741 loss=0.2682 lr=4.16e-05 0.06s/it
+  ep3 step17500/22741 loss=0.2681 lr=4.09e-05 0.06s/it
+  ep3 step17600/22741 loss=0.2680 lr=4.01e-05 0.06s/it
+  ep3 step17700/22741 loss=0.2680 lr=3.93e-05 0.06s/it
+  ep3 step17800/22741 loss=0.2680 lr=3.85e-05 0.06s/it
+  ep3 step17900/22741 loss=0.2681 lr=3.77e-05 0.06s/it
+  ep3 step18000/22741 loss=0.2681 lr=3.70e-05 0.06s/it
+  ep3 step18100/22741 loss=0.2681 lr=3.62e-05 0.06s/it
+  ep3 step18200/22741 loss=0.2681 lr=3.54e-05 0.06s/it
+  ep3 step18300/22741 loss=0.2682 lr=3.46e-05 0.06s/it
+  ep3 step18400/22741 loss=0.2681 lr=3.38e-05 0.06s/it
+  ep3 step18500/22741 loss=0.2681 lr=3.31e-05 0.06s/it
+  ep3 step18600/22741 loss=0.2679 lr=3.23e-05 0.06s/it
+  ep3 step18700/22741 loss=0.2679 lr=3.15e-05 0.06s/it
+  ep3 step18800/22741 loss=0.2677 lr=3.07e-05 0.06s/it
+  ep3 step18900/22741 loss=0.2677 lr=2.99e-05 0.06s/it
+  ep3 step19000/22741 loss=0.2678 lr=2.92e-05 0.06s/it
+  ep3 step19100/22741 loss=0.2676 lr=2.84e-05 0.06s/it
+  ep3 step19200/22741 loss=0.2675 lr=2.76e-05 0.06s/it
+  ep3 step19300/22741 loss=0.2675 lr=2.68e-05 0.06s/it
+  ep3 step19400/22741 loss=0.2676 lr=2.60e-05 0.06s/it
+  ep3 step19500/22741 loss=0.2676 lr=2.53e-05 0.06s/it
+  ep3 step19600/22741 loss=0.2677 lr=2.45e-05 0.06s/it
+  ep3 step19700/22741 loss=0.2676 lr=2.37e-05 0.06s/it
+  ep3 step19800/22741 loss=0.2676 lr=2.29e-05 0.06s/it
+  ep3 step19900/22741 loss=0.2676 lr=2.22e-05 0.06s/it
+  ep3 step20000/22741 loss=0.2676 lr=2.14e-05 0.06s/it
+  ep3 step20100/22741 loss=0.2676 lr=2.06e-05 0.06s/it
+  ep3 step20200/22741 loss=0.2674 lr=1.98e-05 0.06s/it
+  ep3 step20300/22741 loss=0.2674 lr=1.90e-05 0.06s/it
+  ep3 step20400/22741 loss=0.2674 lr=1.83e-05 0.06s/it
+  ep3 step20500/22741 loss=0.2674 lr=1.75e-05 0.06s/it
+  ep3 step20600/22741 loss=0.2673 lr=1.67e-05 0.06s/it
+  ep3 step20700/22741 loss=0.2673 lr=1.59e-05 0.06s/it
+  ep3 step20800/22741 loss=0.2673 lr=1.51e-05 0.06s/it
+  ep3 step20900/22741 loss=0.2674 lr=1.44e-05 0.06s/it
+  ep3 step21000/22741 loss=0.2672 lr=1.36e-05 0.06s/it
+  ep3 step21100/22741 loss=0.2673 lr=1.28e-05 0.06s/it
+  ep3 step21200/22741 loss=0.2672 lr=1.20e-05 0.06s/it
+  ep3 step21300/22741 loss=0.2672 lr=1.12e-05 0.06s/it
+  ep3 step21400/22741 loss=0.2673 lr=1.05e-05 0.06s/it
+  ep3 step21500/22741 loss=0.2672 lr=9.68e-06 0.06s/it
+  ep3 step21600/22741 loss=0.2671 lr=8.90e-06 0.06s/it
+  ep3 step21700/22741 loss=0.2671 lr=8.12e-06 0.06s/it
+  ep3 step21800/22741 loss=0.2670 lr=7.34e-06 0.06s/it
+  ep3 step21900/22741 loss=0.2670 lr=6.56e-06 0.06s/it
+  ep3 step22000/22741 loss=0.2668 lr=5.78e-06 0.06s/it
+  ep3 step22100/22741 loss=0.2668 lr=5.00e-06 0.06s/it
+  ep3 step22200/22741 loss=0.2667 lr=4.22e-06 0.06s/it
+  ep3 step22300/22741 loss=0.2667 lr=3.44e-06 0.06s/it
+  ep3 step22400/22741 loss=0.2667 lr=2.66e-06 0.06s/it
+  ep3 step22500/22741 loss=0.2667 lr=1.88e-06 0.06s/it
+  ep3 step22600/22741 loss=0.2667 lr=1.10e-06 0.06s/it
+  ep3 step22700/22741 loss=0.2667 lr=3.20e-07 0.06s/it
+[qqp_roberta-base_lora_r8_qv_s0] epoch 3: {"validation": 0.8896611427158051} score=0.8897 (1424s)
+[qqp_roberta-base_lora_r8_qv_s0] DONE best=0.8897 time=72.2min peak=1896MB

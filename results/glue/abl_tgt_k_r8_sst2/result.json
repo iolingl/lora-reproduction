@@ -1,0 +1,56 @@
+{
+  "run": "abl_tgt_k_r8_sst2",
+  "task": "sst2",
+  "model": "roberta-base",
+  "method": "lora",
+  "rank": 8,
+  "alpha": 8.0,
+  "targets": "k",
+  "epochs": 3,
+  "batch_size": 32,
+  "lr": 0.0004,
+  "weight_decay": 0.1,
+  "max_len": 256,
+  "seed": 0,
+  "limit_train": 0,
+  "n_trainable": 739586,
+  "n_lora": 147456,
+  "n_total": 124794626,
+  "n_adapted": 12,
+  "best_score": 0.9231651376146789,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.3156541440660866,
+      "lr": 0.0002836449385211386,
+      "eval": {
+        "validation": 0.9174311926605505
+      },
+      "score": 0.9174311926605505,
+      "epoch_time_s": 126.87306356430054
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.24250720896259476,
+      "lr": 0.0001418224692605693,
+      "eval": {
+        "validation": 0.9231651376146789
+      },
+      "score": 0.9231651376146789,
+      "epoch_time_s": 128.79097843170166
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.22455266866703041,
+      "lr": 0.0,
+      "eval": {
+        "validation": 0.9208715596330275
+      },
+      "score": 0.9208715596330275,
+      "epoch_time_s": 134.0217022895813
+    }
+  ],
+  "elapsed_s": 389.70254707336426,
+  "peak_mem_mb": 1313.39501953125,
+  "gpu": "NVIDIA TITAN RTX"
+}

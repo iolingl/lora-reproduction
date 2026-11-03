@@ -1,0 +1,13 @@
+{
+  "run": "results/e2e/e2e_ft",
+  "n_rows": 4693,
+  "n_examples": 630,
+  "refs_per_example": 7.449206349206349,
+  "inconsistent_predictions": 4,
+  "metrics": {
+    "BLEU": 64.95709901110179,
+    "ROUGE-L": 70.13334762112167,
+    "METEOR": 72.9988690640061,
+    "CIDEr": 1.7210765830781152
+  }
+}

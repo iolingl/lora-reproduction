@@ -1,0 +1,27 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+L00 query ||dW||=9.627 proj_dW=2.286 rand=0.972 ratio=2.35 amp=4.21
+L00 value ||dW||=5.269 proj_dW=0.854 rand=0.243 ratio=3.51 amp=6.17
+L01 query ||dW||=7.795 proj_dW=1.009 rand=0.620 ratio=1.63 amp=7.72
+L01 value ||dW||=5.990 proj_dW=0.408 rand=0.345 ratio=1.18 amp=14.68
+L02 query ||dW||=7.599 proj_dW=0.976 rand=0.552 ratio=1.77 amp=7.78
+L02 value ||dW||=6.931 proj_dW=0.571 rand=0.388 ratio=1.47 amp=12.15
+L03 query ||dW||=8.877 proj_dW=0.805 rand=0.558 ratio=1.44 amp=11.02
+L03 value ||dW||=7.235 proj_dW=0.570 rand=0.375 ratio=1.52 amp=12.69
+L04 query ||dW||=9.240 proj_dW=1.003 rand=0.594 ratio=1.69 amp=9.22
+L04 value ||dW||=7.814 proj_dW=0.548 rand=0.376 ratio=1.46 amp=14.26
+L05 query ||dW||=9.436 proj_dW=1.069 rand=0.517 ratio=2.07 amp=8.82
+L05 value ||dW||=8.354 proj_dW=0.685 rand=0.373 ratio=1.83 amp=12.20
+L06 query ||dW||=10.215 proj_dW=1.096 rand=0.541 ratio=2.03 amp=9.32
+L06 value ||dW||=9.371 proj_dW=0.633 rand=0.425 ratio=1.49 amp=14.81
+L07 query ||dW||=12.251 proj_dW=1.092 rand=0.591 ratio=1.85 amp=11.22
+L07 value ||dW||=9.445 proj_dW=0.638 rand=0.317 ratio=2.02 amp=14.79
+L08 query ||dW||=12.326 proj_dW=0.687 rand=0.555 ratio=1.24 amp=17.94
+L08 value ||dW||=8.412 proj_dW=0.554 rand=0.409 ratio=1.35 amp=15.19
+L09 query ||dW||=13.843 proj_dW=0.917 rand=0.420 ratio=2.18 amp=15.10
+L09 value ||dW||=7.482 proj_dW=0.407 rand=0.318 ratio=1.28 amp=18.36
+L10 query ||dW||=14.426 proj_dW=0.903 rand=0.516 ratio=1.75 amp=15.97
+L10 value ||dW||=5.987 proj_dW=0.436 rand=0.305 ratio=1.43 amp=13.72
+L11 query ||dW||=12.777 proj_dW=0.908 rand=0.445 ratio=2.04 amp=14.07
+L11 value ||dW||=5.437 proj_dW=0.655 rand=0.341 ratio=1.92 amp=8.30
+saved results/analysis/official_projection.json

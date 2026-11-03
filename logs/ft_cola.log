@@ -1,0 +1,51 @@
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Using the latest cached version of the dataset since glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'cola' at /home/ytli/.cache/huggingface/datasets/glue/cola/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c (last modified on Tue Nov  3 21:00:54 2026).
+[ft_cola] trainable=124,647,170 lora=0 (100.000%) steps/epoch=268 total=4020
+  ep1 step100/268 loss=0.6580 lr=8.30e-06 0.08s/it
+  ep1 step200/268 loss=0.5849 lr=1.66e-05 0.08s/it
+[ft_cola] epoch 1: {"validation": 0.4890652579027221} score=0.4891 (21s)
+  ep2 step100/268 loss=0.3945 lr=1.93e-05 0.07s/it
+  ep2 step200/268 loss=0.3793 lr=1.88e-05 0.07s/it
+[ft_cola] epoch 2: {"validation": 0.5701365244041533} score=0.5701 (20s)
+  ep3 step100/268 loss=0.2574 lr=1.79e-05 0.07s/it
+  ep3 step200/268 loss=0.2521 lr=1.74e-05 0.07s/it
+[ft_cola] epoch 3: {"validation": 0.5981793938430704} score=0.5982 (20s)
+  ep4 step100/268 loss=0.1810 lr=1.65e-05 0.07s/it
+  ep4 step200/268 loss=0.1733 lr=1.60e-05 0.07s/it
+[ft_cola] epoch 4: {"validation": 0.5812438634987175} score=0.5812 (20s)
+  ep5 step100/268 loss=0.1391 lr=1.51e-05 0.07s/it
+  ep5 step200/268 loss=0.1370 lr=1.45e-05 0.07s/it
+[ft_cola] epoch 5: {"validation": 0.6220771959026112} score=0.6221 (20s)
+  ep6 step100/268 loss=0.1058 lr=1.37e-05 0.08s/it
+  ep6 step200/268 loss=0.1050 lr=1.31e-05 0.08s/it
+[ft_cola] epoch 6: {"validation": 0.5655064186252995} score=0.5655 (21s)
+  ep7 step100/268 loss=0.0760 lr=1.22e-05 0.07s/it
+  ep7 step200/268 loss=0.0861 lr=1.17e-05 0.07s/it
+[ft_cola] epoch 7: {"validation": 0.6116847500337435} score=0.6117 (20s)
+  ep8 step100/268 loss=0.0712 lr=1.08e-05 0.07s/it
+  ep8 step200/268 loss=0.0769 lr=1.03e-05 0.07s/it
+[ft_cola] epoch 8: {"validation": 0.5879880120258366} score=0.5880 (20s)
+  ep9 step100/268 loss=0.0624 lr=9.40e-06 0.08s/it
+  ep9 step200/268 loss=0.0634 lr=8.87e-06 0.07s/it
+[ft_cola] epoch 9: {"validation": 0.5905535987624345} score=0.5906 (20s)
+  ep10 step100/268 loss=0.0511 lr=7.98e-06 0.08s/it
+  ep10 step200/268 loss=0.0447 lr=7.45e-06 0.08s/it
+[ft_cola] epoch 10: {"validation": 0.6109671005868332} score=0.6110 (22s)
+  ep11 step100/268 loss=0.0355 lr=6.56e-06 0.08s/it
+  ep11 step200/268 loss=0.0415 lr=6.03e-06 0.08s/it
+[ft_cola] epoch 11: {"validation": 0.5957317644481708} score=0.5957 (21s)
+  ep12 step100/268 loss=0.0207 lr=5.14e-06 0.08s/it
+  ep12 step200/268 loss=0.0291 lr=4.61e-06 0.08s/it
+[ft_cola] epoch 12: {"validation": 0.5908413057707468} score=0.5908 (21s)
+  ep13 step100/268 loss=0.0235 lr=3.73e-06 0.08s/it
+  ep13 step200/268 loss=0.0244 lr=3.20e-06 0.08s/it
+[ft_cola] epoch 13: {"validation": 0.5855108661181546} score=0.5855 (22s)
+  ep14 step100/268 loss=0.0207 lr=2.31e-06 0.08s/it
+  ep14 step200/268 loss=0.0204 lr=1.78e-06 0.08s/it
+[ft_cola] epoch 14: {"validation": 0.5808065596778653} score=0.5808 (22s)
+  ep15 step100/268 loss=0.0195 lr=8.89e-07 0.08s/it
+  ep15 step200/268 loss=0.0154 lr=3.60e-07 0.08s/it
+[ft_cola] epoch 15: {"validation": 0.5837588651574037} score=0.5838 (21s)
+[ft_cola] DONE best=0.6221 time=5.2min peak=2428MB

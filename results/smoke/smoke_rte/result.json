@@ -1,0 +1,36 @@
+{
+  "run": "smoke_rte",
+  "task": "rte",
+  "model": "roberta-base",
+  "method": "lora",
+  "rank": 8,
+  "alpha": 8.0,
+  "targets": "qv",
+  "epochs": 1,
+  "batch_size": 32,
+  "lr": 0.0005,
+  "weight_decay": 0.1,
+  "max_len": 128,
+  "seed": 0,
+  "limit_train": 500,
+  "n_trainable": 887042,
+  "n_lora": 294912,
+  "n_total": 124942082,
+  "n_adapted": 24,
+  "best_score": 0.5270758122743683,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.7231664576530457,
+      "lr": 0.0,
+      "eval": {
+        "validation": 0.5270758122743683
+      },
+      "score": 0.5270758122743683,
+      "epoch_time_s": 2.5871098041534424
+    }
+  ],
+  "elapsed_s": 2.6020798683166504,
+  "peak_mem_mb": 1866.35595703125,
+  "gpu": "NVIDIA TITAN RTX"
+}

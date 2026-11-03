@@ -1,0 +1,72 @@
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Using the latest cached version of the dataset since glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'sst2' at /home/ytli/.cache/huggingface/datasets/glue/sst2/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c (last modified on Tue Nov  3 19:40:01 2026).
+[abl_rank8_sst2] trainable=887,042 lora=294,912 (0.710%) steps/epoch=2105 total=6315
+  ep1 step100/2105 loss=0.6879 lr=1.06e-04 0.07s/it
+  ep1 step200/2105 loss=0.5699 lr=2.12e-04 0.06s/it
+  ep1 step300/2105 loss=0.4842 lr=3.17e-04 0.06s/it
+  ep1 step400/2105 loss=0.4330 lr=3.99e-04 0.07s/it
+  ep1 step500/2105 loss=0.3974 lr=3.92e-04 0.07s/it
+  ep1 step600/2105 loss=0.3767 lr=3.85e-04 0.07s/it
+  ep1 step700/2105 loss=0.3594 lr=3.78e-04 0.07s/it
+  ep1 step800/2105 loss=0.3466 lr=3.72e-04 0.07s/it
+  ep1 step900/2105 loss=0.3381 lr=3.65e-04 0.07s/it
+  ep1 step1000/2105 loss=0.3283 lr=3.58e-04 0.07s/it
+  ep1 step1100/2105 loss=0.3204 lr=3.51e-04 0.07s/it
+  ep1 step1200/2105 loss=0.3145 lr=3.45e-04 0.07s/it
+  ep1 step1300/2105 loss=0.3083 lr=3.38e-04 0.06s/it
+  ep1 step1400/2105 loss=0.3027 lr=3.31e-04 0.06s/it
+  ep1 step1500/2105 loss=0.2968 lr=3.24e-04 0.06s/it
+  ep1 step1600/2105 loss=0.2931 lr=3.18e-04 0.06s/it
+  ep1 step1700/2105 loss=0.2898 lr=3.11e-04 0.06s/it
+  ep1 step1800/2105 loss=0.2867 lr=3.04e-04 0.06s/it
+  ep1 step1900/2105 loss=0.2835 lr=2.97e-04 0.06s/it
+  ep1 step2000/2105 loss=0.2803 lr=2.91e-04 0.06s/it
+  ep1 step2100/2105 loss=0.2772 lr=2.84e-04 0.06s/it
+[abl_rank8_sst2] epoch 1: {"validation": 0.9243119266055045} score=0.9243 (135s)
+  ep2 step100/2105 loss=0.2198 lr=2.77e-04 0.06s/it
+  ep2 step200/2105 loss=0.2100 lr=2.70e-04 0.06s/it
+  ep2 step300/2105 loss=0.2087 lr=2.63e-04 0.06s/it
+  ep2 step400/2105 loss=0.2058 lr=2.57e-04 0.06s/it
+  ep2 step500/2105 loss=0.2063 lr=2.50e-04 0.06s/it
+  ep2 step600/2105 loss=0.2059 lr=2.43e-04 0.06s/it
+  ep2 step700/2105 loss=0.2085 lr=2.36e-04 0.06s/it
+  ep2 step800/2105 loss=0.2082 lr=2.30e-04 0.06s/it
+  ep2 step900/2105 loss=0.2078 lr=2.23e-04 0.06s/it
+  ep2 step1000/2105 loss=0.2062 lr=2.16e-04 0.06s/it
+  ep2 step1100/2105 loss=0.2060 lr=2.10e-04 0.06s/it
+  ep2 step1200/2105 loss=0.2049 lr=2.03e-04 0.06s/it
+  ep2 step1300/2105 loss=0.2048 lr=1.96e-04 0.06s/it
+  ep2 step1400/2105 loss=0.2040 lr=1.89e-04 0.06s/it
+  ep2 step1500/2105 loss=0.2034 lr=1.83e-04 0.06s/it
+  ep2 step1600/2105 loss=0.2022 lr=1.76e-04 0.06s/it
+  ep2 step1700/2105 loss=0.2009 lr=1.69e-04 0.06s/it
+  ep2 step1800/2105 loss=0.2004 lr=1.62e-04 0.06s/it
+  ep2 step1900/2105 loss=0.1987 lr=1.56e-04 0.06s/it
+  ep2 step2000/2105 loss=0.1984 lr=1.49e-04 0.06s/it
+  ep2 step2100/2105 loss=0.1971 lr=1.42e-04 0.06s/it
+[abl_rank8_sst2] epoch 2: {"validation": 0.9334862385321101} score=0.9335 (134s)
+  ep3 step100/2105 loss=0.1881 lr=1.35e-04 0.06s/it
+  ep3 step200/2105 loss=0.1806 lr=1.28e-04 0.06s/it
+  ep3 step300/2105 loss=0.1800 lr=1.22e-04 0.06s/it
+  ep3 step400/2105 loss=0.1750 lr=1.15e-04 0.06s/it
+  ep3 step500/2105 loss=0.1757 lr=1.08e-04 0.06s/it
+  ep3 step600/2105 loss=0.1749 lr=1.01e-04 0.06s/it
+  ep3 step700/2105 loss=0.1750 lr=9.47e-05 0.06s/it
+  ep3 step800/2105 loss=0.1746 lr=8.79e-05 0.06s/it
+  ep3 step900/2105 loss=0.1745 lr=8.12e-05 0.06s/it
+  ep3 step1000/2105 loss=0.1727 lr=7.44e-05 0.06s/it
+  ep3 step1100/2105 loss=0.1732 lr=6.77e-05 0.06s/it
+  ep3 step1200/2105 loss=0.1728 lr=6.10e-05 0.06s/it
+  ep3 step1300/2105 loss=0.1720 lr=5.42e-05 0.06s/it
+  ep3 step1400/2105 loss=0.1721 lr=4.75e-05 0.06s/it
+  ep3 step1500/2105 loss=0.1713 lr=4.08e-05 0.06s/it
+  ep3 step1600/2105 loss=0.1711 lr=3.40e-05 0.06s/it
+  ep3 step1700/2105 loss=0.1714 lr=2.73e-05 0.06s/it
+  ep3 step1800/2105 loss=0.1722 lr=2.05e-05 0.06s/it
+  ep3 step1900/2105 loss=0.1729 lr=1.38e-05 0.06s/it
+  ep3 step2000/2105 loss=0.1732 lr=7.07e-06 0.06s/it
+  ep3 step2100/2105 loss=0.1739 lr=3.37e-07 0.06s/it
+[abl_rank8_sst2] epoch 3: {"validation": 0.9369266055045872} score=0.9369 (134s)
+[abl_rank8_sst2] DONE best=0.9369 time=6.7min peak=1357MB

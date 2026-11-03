@@ -1,0 +1,7 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+query: phi(8,64) diag=[0.264 0.172 0.176 0.149 0.128 0.128 0.125 0.123]
+query: ||W||F=52.91 ||dW||F=3.86 proj_dW=0.586 proj_W=15.529 proj_rand=0.597
+value: phi(8,64) diag=[0.432 0.255 0.267 0.243 0.233 0.221 0.214 0.195]
+value: ||W||F=38.66 ||dW||F=2.53 proj_dW=0.502 proj_W=9.757 proj_rand=0.417
+saved results/analysis

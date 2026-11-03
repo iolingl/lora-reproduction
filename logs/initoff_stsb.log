@@ -1,0 +1,89 @@
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+init LoRA from official/LoRA/examples/NLU/roberta_base_lora_mnli.bin: 48 tensors, missing=0, unexpected=0
+Using the latest cached version of the dataset since glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'stsb' at /home/ytli/.cache/huggingface/datasets/glue/stsb/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c (last modified on Tue Nov  3 20:08:24 2026).
+[initoff_stsb] trainable=886,273 lora=294,912 (0.709%) steps/epoch=360 total=7200
+/data1/ytli/learn/lora/src/train_glue.py:190: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  scheduler.step()
+  ep1 step100/360 loss=4.4538 lr=9.26e-05 0.05s/it
+  ep1 step200/360 loss=2.5417 lr=1.85e-04 0.05s/it
+  ep1 step300/360 loss=1.8914 lr=2.78e-04 0.05s/it
+[initoff_stsb] epoch 1: {"validation": 0.8923555016517639} score=0.8924 (19s)
+  ep2 step100/360 loss=0.4678 lr=3.98e-04 0.06s/it
+  ep2 step200/360 loss=0.4687 lr=3.92e-04 0.06s/it
+  ep2 step300/360 loss=0.4563 lr=3.87e-04 0.06s/it
+[initoff_stsb] epoch 2: {"validation": 0.9058269262313843} score=0.9058 (22s)
+  ep3 step100/360 loss=0.3531 lr=3.77e-04 0.06s/it
+  ep3 step200/360 loss=0.3600 lr=3.71e-04 0.06s/it
+  ep3 step300/360 loss=0.3629 lr=3.65e-04 0.06s/it
+[initoff_stsb] epoch 3: {"validation": 0.9120399355888367} score=0.9120 (22s)
+  ep4 step100/360 loss=0.3139 lr=3.56e-04 0.06s/it
+  ep4 step200/360 loss=0.3239 lr=3.50e-04 0.06s/it
+  ep4 step300/360 loss=0.3170 lr=3.44e-04 0.05s/it
+[initoff_stsb] epoch 4: {"validation": 0.9133623242378235} score=0.9134 (20s)
+  ep5 step100/360 loss=0.2690 lr=3.35e-04 0.06s/it
+  ep5 step200/360 loss=0.2699 lr=3.29e-04 0.06s/it
+  ep5 step300/360 loss=0.2689 lr=3.23e-04 0.06s/it
+[initoff_stsb] epoch 5: {"validation": 0.9137845635414124} score=0.9138 (22s)
+  ep6 step100/360 loss=0.2426 lr=3.13e-04 0.06s/it
+  ep6 step200/360 loss=0.2496 lr=3.07e-04 0.06s/it
+  ep6 step300/360 loss=0.2432 lr=3.01e-04 0.06s/it
+[initoff_stsb] epoch 6: {"validation": 0.9127810001373291} score=0.9128 (21s)
+  ep7 step100/360 loss=0.2106 lr=2.92e-04 0.06s/it
+  ep7 step200/360 loss=0.2094 lr=2.86e-04 0.06s/it
+  ep7 step300/360 loss=0.2124 lr=2.80e-04 0.06s/it
+[initoff_stsb] epoch 7: {"validation": 0.9153019189834595} score=0.9153 (22s)
+  ep8 step100/360 loss=0.1999 lr=2.71e-04 0.06s/it
+  ep8 step200/360 loss=0.1952 lr=2.65e-04 0.06s/it
+  ep8 step300/360 loss=0.1958 lr=2.59e-04 0.06s/it
+[initoff_stsb] epoch 8: {"validation": 0.9128061532974243} score=0.9128 (21s)
+  ep9 step100/360 loss=0.1712 lr=2.49e-04 0.05s/it
+  ep9 step200/360 loss=0.1845 lr=2.43e-04 0.05s/it
+  ep9 step300/360 loss=0.1847 lr=2.38e-04 0.05s/it
+[initoff_stsb] epoch 9: {"validation": 0.9139455556869507} score=0.9139 (18s)
+  ep10 step100/360 loss=0.1685 lr=2.28e-04 0.06s/it
+  ep10 step200/360 loss=0.1663 lr=2.22e-04 0.06s/it
+  ep10 step300/360 loss=0.1678 lr=2.16e-04 0.06s/it
+[initoff_stsb] epoch 10: {"validation": 0.9128363132476807} score=0.9128 (21s)
+  ep11 step100/360 loss=0.1575 lr=2.07e-04 0.07s/it
+  ep11 step200/360 loss=0.1640 lr=2.01e-04 0.07s/it
+  ep11 step300/360 loss=0.1623 lr=1.95e-04 0.07s/it
+[initoff_stsb] epoch 11: {"validation": 0.9150857925415039} score=0.9151 (24s)
+  ep12 step100/360 loss=0.1495 lr=1.86e-04 0.06s/it
+  ep12 step200/360 loss=0.1428 lr=1.80e-04 0.06s/it
+  ep12 step300/360 loss=0.1438 lr=1.74e-04 0.06s/it
+[initoff_stsb] epoch 12: {"validation": 0.9133993983268738} score=0.9134 (21s)
+  ep13 step100/360 loss=0.1317 lr=1.64e-04 0.06s/it
+  ep13 step200/360 loss=0.1379 lr=1.58e-04 0.06s/it
+  ep13 step300/360 loss=0.1378 lr=1.52e-04 0.06s/it
+[initoff_stsb] epoch 13: {"validation": 0.9140927791595459} score=0.9141 (23s)
+  ep14 step100/360 loss=0.1230 lr=1.43e-04 0.07s/it
+  ep14 step200/360 loss=0.1250 lr=1.37e-04 0.06s/it
+  ep14 step300/360 loss=0.1278 lr=1.31e-04 0.06s/it
+[initoff_stsb] epoch 14: {"validation": 0.9148606061935425} score=0.9149 (23s)
+  ep15 step100/360 loss=0.1211 lr=1.22e-04 0.06s/it
+  ep15 step200/360 loss=0.1188 lr=1.16e-04 0.06s/it
+  ep15 step300/360 loss=0.1196 lr=1.10e-04 0.06s/it
+[initoff_stsb] epoch 15: {"validation": 0.9137268662452698} score=0.9137 (23s)
+  ep16 step100/360 loss=0.1104 lr=1.00e-04 0.06s/it
+  ep16 step200/360 loss=0.1138 lr=9.46e-05 0.06s/it
+  ep16 step300/360 loss=0.1146 lr=8.87e-05 0.05s/it
+[initoff_stsb] epoch 16: {"validation": 0.9161598682403564} score=0.9162 (21s)
+  ep17 step100/360 loss=0.1064 lr=7.92e-05 0.06s/it
+  ep17 step200/360 loss=0.1088 lr=7.33e-05 0.06s/it
+  ep17 step300/360 loss=0.1079 lr=6.74e-05 0.06s/it
+[initoff_stsb] epoch 17: {"validation": 0.9152904748916626} score=0.9153 (24s)
+  ep18 step100/360 loss=0.1103 lr=5.79e-05 0.06s/it
+  ep18 step200/360 loss=0.1084 lr=5.20e-05 0.06s/it
+  ep18 step300/360 loss=0.1057 lr=4.61e-05 0.06s/it
+[initoff_stsb] epoch 18: {"validation": 0.9156320691108704} score=0.9156 (21s)
+  ep19 step100/360 loss=0.0958 lr=3.66e-05 0.06s/it
+  ep19 step200/360 loss=0.0971 lr=3.07e-05 0.06s/it
+  ep19 step300/360 loss=0.0970 lr=2.48e-05 0.06s/it
+[initoff_stsb] epoch 19: {"validation": 0.915463387966156} score=0.9155 (22s)
+  ep20 step100/360 loss=0.0938 lr=1.54e-05 0.05s/it
+  ep20 step200/360 loss=0.0962 lr=9.46e-06 0.05s/it
+  ep20 step300/360 loss=0.0952 lr=3.55e-06 0.05s/it
+[initoff_stsb] epoch 20: {"validation": 0.9160794615745544} score=0.9161 (20s)
+[initoff_stsb] DONE best=0.9162 time=7.2min peak=1292MB

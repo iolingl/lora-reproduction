@@ -1,0 +1,27 @@
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+init LoRA from official/LoRA/examples/NLU/roberta_base_lora_mnli.bin: 48 tensors, missing=0, unexpected=0
+Using the latest cached version of the dataset since glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'rte' at /home/ytli/.cache/huggingface/datasets/glue/rte/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c (last modified on Tue Nov  3 19:39:29 2026).
+[initoff_rte] trainable=887,042 lora=294,912 (0.710%) steps/epoch=78 total=1560
+[initoff_rte] epoch 1: {"validation": 0.8267148014440433} score=0.8267 (8s)
+[initoff_rte] epoch 2: {"validation": 0.8231046931407943} score=0.8231 (8s)
+[initoff_rte] epoch 3: {"validation": 0.8411552346570397} score=0.8412 (8s)
+[initoff_rte] epoch 4: {"validation": 0.8375451263537906} score=0.8375 (9s)
+[initoff_rte] epoch 5: {"validation": 0.8267148014440433} score=0.8267 (8s)
+[initoff_rte] epoch 6: {"validation": 0.8447653429602888} score=0.8448 (9s)
+[initoff_rte] epoch 7: {"validation": 0.8447653429602888} score=0.8448 (8s)
+[initoff_rte] epoch 8: {"validation": 0.8664259927797834} score=0.8664 (10s)
+[initoff_rte] epoch 9: {"validation": 0.8303249097472925} score=0.8303 (8s)
+[initoff_rte] epoch 10: {"validation": 0.8339350180505415} score=0.8339 (10s)
+[initoff_rte] epoch 11: {"validation": 0.8375451263537906} score=0.8375 (8s)
+[initoff_rte] epoch 12: {"validation": 0.8447653429602888} score=0.8448 (9s)
+[initoff_rte] epoch 13: {"validation": 0.8303249097472925} score=0.8303 (9s)
+[initoff_rte] epoch 14: {"validation": 0.8411552346570397} score=0.8412 (11s)
+[initoff_rte] epoch 15: {"validation": 0.8411552346570397} score=0.8412 (9s)
+[initoff_rte] epoch 16: {"validation": 0.851985559566787} score=0.8520 (10s)
+[initoff_rte] epoch 17: {"validation": 0.8375451263537906} score=0.8375 (9s)
+[initoff_rte] epoch 18: {"validation": 0.855595667870036} score=0.8556 (10s)
+[initoff_rte] epoch 19: {"validation": 0.855595667870036} score=0.8556 (9s)
+[initoff_rte] epoch 20: {"validation": 0.855595667870036} score=0.8556 (10s)
+[initoff_rte] DONE best=0.8664 time=3.0min peak=3075MB

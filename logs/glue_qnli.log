@@ -1,0 +1,173 @@
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Using the latest cached version of the dataset since glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'qnli' at /home/ytli/.cache/huggingface/datasets/glue/qnli/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c (last modified on Tue Nov  3 19:41:16 2026).
+Map (num_proc=2):   0%|          | 0/104743 [00:00<?, ? examples/s]Map (num_proc=2):   1%|          | 1000/104743 [00:01<02:21, 735.35 examples/s]Map (num_proc=2):   3%|▎         | 3000/104743 [00:02<01:00, 1687.42 examples/s]Map (num_proc=2):   5%|▍         | 5000/104743 [00:02<00:45, 2216.17 examples/s]Map (num_proc=2):   7%|▋         | 7000/104743 [00:03<00:38, 2536.24 examples/s]Map (num_proc=2):   9%|▊         | 9000/104743 [00:03<00:35, 2716.93 examples/s]Map (num_proc=2):  11%|█         | 11000/104743 [00:04<00:33, 2806.96 examples/s]Map (num_proc=2):  11%|█▏        | 12000/104743 [00:04<00:28, 3269.17 examples/s]Map (num_proc=2):  12%|█▏        | 13000/104743 [00:05<00:33, 2770.81 examples/s]Map (num_proc=2):  14%|█▍        | 15000/104743 [00:05<00:31, 2875.47 examples/s]Map (num_proc=2):  16%|█▌        | 17000/104743 [00:07<00:44, 1956.71 examples/s]Map (num_proc=2):  18%|█▊        | 19000/104743 [00:08<00:38, 2229.13 examples/s]Map (num_proc=2):  20%|██        | 21000/104743 [00:08<00:34, 2437.68 examples/s]Map (num_proc=2):  22%|██▏       | 23000/104743 [00:09<00:31, 2578.49 examples/s]Map (num_proc=2):  24%|██▍       | 25000/104743 [00:10<00:29, 2708.52 examples/s]Map (num_proc=2):  26%|██▌       | 27000/104743 [00:10<00:27, 2782.33 examples/s]Map (num_proc=2):  28%|██▊       | 29000/104743 [00:11<00:26, 2873.39 examples/s]Map (num_proc=2):  30%|██▉       | 31000/104743 [00:12<00:25, 2927.29 examples/s]Map (num_proc=2):  32%|███▏      | 33000/104743 [00:12<00:24, 2940.72 examples/s]Map (num_proc=2):  33%|███▎      | 35000/104743 [00:13<00:23, 2958.98 examples/s]Map (num_proc=2):  35%|███▌      | 37000/104743 [00:14<00:22, 2975.92 examples/s]Map (num_proc=2):  37%|███▋      | 39000/104743 [00:14<00:22, 2978.26 examples/s]Map (num_proc=2):  39%|███▉      | 41000/104743 [00:15<00:21, 2979.46 examples/s]Map (num_proc=2):  41%|████      | 43000/104743 [00:16<00:20, 3023.00 examples/s]Map (num_proc=2):  43%|████▎     | 45000/104743 [00:16<00:19, 3060.46 examples/s]Map (num_proc=2):  45%|████▍     | 47000/104743 [00:17<00:18, 3079.71 examples/s]Map (num_proc=2):  47%|████▋     | 49000/104743 [00:18<00:18, 3092.94 examples/s]Map (num_proc=2):  49%|████▊     | 51000/104743 [00:18<00:17, 3107.48 examples/s]Map (num_proc=2):  51%|█████     | 53000/104743 [00:19<00:16, 3106.44 examples/s]Map (num_proc=2):  53%|█████▎    | 55000/104743 [00:19<00:15, 3133.01 examples/s]Map (num_proc=2):  54%|█████▍    | 57000/104743 [00:20<00:15, 3141.21 examples/s]Map (num_proc=2):  56%|█████▋    | 59000/104743 [00:21<00:14, 3124.83 examples/s]Map (num_proc=2):  58%|█████▊    | 61000/104743 [00:21<00:13, 3153.85 examples/s]Map (num_proc=2):  59%|█████▉    | 62000/104743 [00:21<00:12, 3499.93 examples/s]Map (num_proc=2):  60%|██████    | 63000/104743 [00:22<00:13, 3042.63 examples/s]Map (num_proc=2):  61%|██████    | 64000/104743 [00:22<00:12, 3330.76 examples/s]Map (num_proc=2):  62%|██████▏   | 65000/104743 [00:23<00:13, 3027.49 examples/s]Map (num_proc=2):  63%|██████▎   | 66000/104743 [00:23<00:11, 3295.59 examples/s]Map (num_proc=2):  64%|██████▍   | 67000/104743 [00:23<00:12, 3086.78 examples/s]Map (num_proc=2):  65%|██████▍   | 68000/104743 [00:23<00:11, 3249.77 examples/s]Map (num_proc=2):  66%|██████▌   | 69000/104743 [00:24<00:11, 3060.30 examples/s]Map (num_proc=2):  67%|██████▋   | 70000/104743 [00:24<00:10, 3220.93 examples/s]Map (num_proc=2):  68%|██████▊   | 71000/104743 [00:24<00:10, 3076.36 examples/s]Map (num_proc=2):  69%|██████▊   | 72000/104743 [00:25<00:10, 3178.75 examples/s]Map (num_proc=2):  70%|██████▉   | 73000/104743 [00:25<00:10, 3093.00 examples/s]Map (num_proc=2):  71%|███████   | 74000/104743 [00:25<00:10, 3026.08 examples/s]Map (num_proc=2):  72%|███████▏  | 75000/104743 [00:26<00:09, 3028.87 examples/s]Map (num_proc=2):  73%|███████▎  | 76000/104743 [00:26<00:09, 2998.64 examples/s]Map (num_proc=2):  74%|███████▎  | 77000/104743 [00:26<00:09, 2991.96 examples/s]Map (num_proc=2):  74%|███████▍  | 78000/104743 [00:27<00:08, 2979.61 examples/s]Map (num_proc=2):  75%|███████▌  | 79000/104743 [00:27<00:08, 2921.23 examples/s]Map (num_proc=2):  76%|███████▋  | 80000/104743 [00:28<00:08, 2951.86 examples/s]Map (num_proc=2):  77%|███████▋  | 81000/104743 [00:28<00:07, 3006.95 examples/s]Map (num_proc=2):  78%|███████▊  | 82000/104743 [00:28<00:07, 2896.35 examples/s]Map (num_proc=2):  79%|███████▉  | 83000/104743 [00:29<00:10, 2107.89 examples/s]Map (num_proc=2):  80%|████████  | 84000/104743 [00:29<00:09, 2126.61 examples/s]Map (num_proc=2):  81%|████████  | 85000/104743 [00:30<00:07, 2479.49 examples/s]Map (num_proc=2):  82%|████████▏ | 86000/104743 [00:30<00:07, 2404.20 examples/s]Map (num_proc=2):  83%|████████▎ | 87000/104743 [00:30<00:06, 2793.69 examples/s]Map (num_proc=2):  84%|████████▍ | 88000/104743 [00:31<00:06, 2528.39 examples/s]Map (num_proc=2):  85%|████████▍ | 89000/104743 [00:31<00:05, 3044.72 examples/s]Map (num_proc=2):  86%|████████▌ | 90000/104743 [00:32<00:05, 2630.68 examples/s]Map (num_proc=2):  87%|████████▋ | 91000/104743 [00:32<00:04, 3200.71 examples/s]Map (num_proc=2):  88%|████████▊ | 92000/104743 [00:32<00:04, 2689.14 examples/s]Map (num_proc=2):  89%|████████▉ | 93000/104743 [00:32<00:03, 3289.79 examples/s]Map (num_proc=2):  90%|████████▉ | 94000/104743 [00:33<00:03, 2793.30 examples/s]Map (num_proc=2):  91%|█████████ | 95000/104743 [00:33<00:02, 3415.79 examples/s]Map (num_proc=2):  92%|█████████▏| 96000/104743 [00:33<00:03, 2792.70 examples/s]Map (num_proc=2):  93%|█████████▎| 97000/104743 [00:34<00:02, 3475.77 examples/s]Map (num_proc=2):  94%|█████████▎| 98000/104743 [00:34<00:02, 2819.42 examples/s]Map (num_proc=2):  95%|█████████▍| 99000/104743 [00:34<00:01, 3555.01 examples/s]Map (num_proc=2):  95%|█████████▌| 100000/104743 [00:35<00:01, 2817.31 examples/s]Map (num_proc=2):  96%|█████████▋| 101000/104743 [00:35<00:01, 3509.66 examples/s]Map (num_proc=2):  97%|█████████▋| 102000/104743 [00:35<00:00, 2848.39 examples/s]Map (num_proc=2):  98%|█████████▊| 103000/104743 [00:35<00:00, 3424.59 examples/s]Map (num_proc=2): 100%|█████████▉| 104372/104743 [00:36<00:00, 3116.60 examples/s]Map (num_proc=2): 100%|██████████| 104743/104743 [00:36<00:00, 2840.63 examples/s]
+Map (num_proc=2):   0%|          | 0/5463 [00:00<?, ? examples/s]Map (num_proc=2):  18%|█▊        | 1000/5463 [00:01<00:05, 750.35 examples/s]Map (num_proc=2):  55%|█████▍    | 3000/5463 [00:01<00:01, 1701.15 examples/s]Map (num_proc=2):  87%|████████▋ | 4731/5463 [00:02<00:00, 2262.64 examples/s]Map (num_proc=2): 100%|██████████| 5463/5463 [00:02<00:00, 2033.58 examples/s]
+[qnli_roberta-base_lora_r8_qv_s0] trainable=887,042 lora=294,912 (0.710%) steps/epoch=3274 total=16370
+  ep1 step100/3274 loss=0.6944 lr=4.07e-05 0.07s/it
+  ep1 step200/3274 loss=0.6957 lr=8.15e-05 0.07s/it
+  ep1 step300/3274 loss=0.6955 lr=1.22e-04 0.07s/it
+  ep1 step400/3274 loss=0.6550 lr=1.63e-04 0.07s/it
+  ep1 step500/3274 loss=0.6189 lr=2.04e-04 0.07s/it
+  ep1 step600/3274 loss=0.5878 lr=2.44e-04 0.07s/it
+  ep1 step700/3274 loss=0.5633 lr=2.85e-04 0.07s/it
+  ep1 step800/3274 loss=0.5443 lr=3.26e-04 0.07s/it
+  ep1 step900/3274 loss=0.5272 lr=3.67e-04 0.07s/it
+  ep1 step1000/3274 loss=0.5112 lr=4.00e-04 0.07s/it
+  ep1 step1100/3274 loss=0.4995 lr=3.97e-04 0.07s/it
+  ep1 step1200/3274 loss=0.4890 lr=3.94e-04 0.07s/it
+  ep1 step1300/3274 loss=0.4802 lr=3.92e-04 0.07s/it
+  ep1 step1400/3274 loss=0.4717 lr=3.89e-04 0.07s/it
+  ep1 step1500/3274 loss=0.4633 lr=3.87e-04 0.07s/it
+  ep1 step1600/3274 loss=0.4560 lr=3.84e-04 0.07s/it
+  ep1 step1700/3274 loss=0.4483 lr=3.81e-04 0.07s/it
+  ep1 step1800/3274 loss=0.4421 lr=3.79e-04 0.07s/it
+  ep1 step1900/3274 loss=0.4364 lr=3.76e-04 0.07s/it
+  ep1 step2000/3274 loss=0.4311 lr=3.74e-04 0.07s/it
+  ep1 step2100/3274 loss=0.4260 lr=3.71e-04 0.07s/it
+  ep1 step2200/3274 loss=0.4207 lr=3.68e-04 0.07s/it
+  ep1 step2300/3274 loss=0.4163 lr=3.66e-04 0.07s/it
+  ep1 step2400/3274 loss=0.4123 lr=3.63e-04 0.07s/it
+  ep1 step2500/3274 loss=0.4079 lr=3.61e-04 0.07s/it
+  ep1 step2600/3274 loss=0.4054 lr=3.58e-04 0.07s/it
+  ep1 step2700/3274 loss=0.4021 lr=3.55e-04 0.07s/it
+  ep1 step2800/3274 loss=0.3989 lr=3.53e-04 0.07s/it
+  ep1 step2900/3274 loss=0.3957 lr=3.50e-04 0.07s/it
+  ep1 step3000/3274 loss=0.3924 lr=3.48e-04 0.07s/it
+  ep1 step3100/3274 loss=0.3898 lr=3.45e-04 0.07s/it
+  ep1 step3200/3274 loss=0.3863 lr=3.42e-04 0.07s/it
+[qnli_roberta-base_lora_r8_qv_s0] epoch 1: {"validation": 0.9093904448105437} score=0.9094 (223s)
+  ep2 step100/3274 loss=0.2911 lr=3.38e-04 0.07s/it
+  ep2 step200/3274 loss=0.2893 lr=3.35e-04 0.07s/it
+  ep2 step300/3274 loss=0.2916 lr=3.33e-04 0.07s/it
+  ep2 step400/3274 loss=0.2961 lr=3.30e-04 0.07s/it
+  ep2 step500/3274 loss=0.2972 lr=3.27e-04 0.07s/it
+  ep2 step600/3274 loss=0.2929 lr=3.25e-04 0.07s/it
+  ep2 step700/3274 loss=0.2916 lr=3.22e-04 0.07s/it
+  ep2 step800/3274 loss=0.2925 lr=3.20e-04 0.07s/it
+  ep2 step900/3274 loss=0.2929 lr=3.17e-04 0.07s/it
+  ep2 step1000/3274 loss=0.2932 lr=3.14e-04 0.07s/it
+  ep2 step1100/3274 loss=0.2934 lr=3.12e-04 0.07s/it
+  ep2 step1200/3274 loss=0.2926 lr=3.09e-04 0.07s/it
+  ep2 step1300/3274 loss=0.2912 lr=3.07e-04 0.07s/it
+  ep2 step1400/3274 loss=0.2910 lr=3.04e-04 0.07s/it
+  ep2 step1500/3274 loss=0.2896 lr=3.01e-04 0.07s/it
+  ep2 step1600/3274 loss=0.2889 lr=2.99e-04 0.07s/it
+  ep2 step1700/3274 loss=0.2883 lr=2.96e-04 0.07s/it
+  ep2 step1800/3274 loss=0.2879 lr=2.94e-04 0.07s/it
+  ep2 step1900/3274 loss=0.2874 lr=2.91e-04 0.07s/it
+  ep2 step2000/3274 loss=0.2869 lr=2.88e-04 0.07s/it
+  ep2 step2100/3274 loss=0.2868 lr=2.86e-04 0.07s/it
+  ep2 step2200/3274 loss=0.2865 lr=2.83e-04 0.07s/it
+  ep2 step2300/3274 loss=0.2854 lr=2.81e-04 0.07s/it
+  ep2 step2400/3274 loss=0.2848 lr=2.78e-04 0.07s/it
+  ep2 step2500/3274 loss=0.2844 lr=2.75e-04 0.07s/it
+  ep2 step2600/3274 loss=0.2841 lr=2.73e-04 0.07s/it
+  ep2 step2700/3274 loss=0.2832 lr=2.70e-04 0.07s/it
+  ep2 step2800/3274 loss=0.2828 lr=2.68e-04 0.07s/it
+  ep2 step2900/3274 loss=0.2827 lr=2.65e-04 0.07s/it
+  ep2 step3000/3274 loss=0.2820 lr=2.62e-04 0.07s/it
+  ep2 step3100/3274 loss=0.2822 lr=2.60e-04 0.07s/it
+  ep2 step3200/3274 loss=0.2821 lr=2.57e-04 0.07s/it
+[qnli_roberta-base_lora_r8_qv_s0] epoch 2: {"validation": 0.9156141314296175} score=0.9156 (232s)
+  ep3 step100/3274 loss=0.2601 lr=2.53e-04 0.07s/it
+  ep3 step200/3274 loss=0.2582 lr=2.50e-04 0.06s/it
+  ep3 step300/3274 loss=0.2568 lr=2.48e-04 0.06s/it
+  ep3 step400/3274 loss=0.2568 lr=2.45e-04 0.07s/it
+  ep3 step500/3274 loss=0.2579 lr=2.42e-04 0.07s/it
+  ep3 step600/3274 loss=0.2587 lr=2.40e-04 0.07s/it
+  ep3 step700/3274 loss=0.2567 lr=2.37e-04 0.08s/it
+  ep3 step800/3274 loss=0.2564 lr=2.35e-04 0.08s/it
+  ep3 step900/3274 loss=0.2563 lr=2.32e-04 0.08s/it
+  ep3 step1000/3274 loss=0.2547 lr=2.29e-04 0.09s/it
+  ep3 step1100/3274 loss=0.2538 lr=2.27e-04 0.09s/it
+  ep3 step1200/3274 loss=0.2535 lr=2.24e-04 0.09s/it
+  ep3 step1300/3274 loss=0.2535 lr=2.22e-04 0.09s/it
+  ep3 step1400/3274 loss=0.2540 lr=2.19e-04 0.09s/it
+  ep3 step1500/3274 loss=0.2541 lr=2.16e-04 0.09s/it
+  ep3 step1600/3274 loss=0.2535 lr=2.14e-04 0.09s/it
+  ep3 step1700/3274 loss=0.2533 lr=2.11e-04 0.09s/it
+  ep3 step1800/3274 loss=0.2537 lr=2.09e-04 0.09s/it
+  ep3 step1900/3274 loss=0.2541 lr=2.06e-04 0.09s/it
+  ep3 step2000/3274 loss=0.2545 lr=2.03e-04 0.09s/it
+  ep3 step2100/3274 loss=0.2546 lr=2.01e-04 0.09s/it
+  ep3 step2200/3274 loss=0.2543 lr=1.98e-04 0.10s/it
+  ep3 step2300/3274 loss=0.2537 lr=1.96e-04 0.10s/it
+  ep3 step2400/3274 loss=0.2541 lr=1.93e-04 0.10s/it
+  ep3 step2500/3274 loss=0.2543 lr=1.90e-04 0.10s/it
+  ep3 step2600/3274 loss=0.2547 lr=1.88e-04 0.10s/it
+  ep3 step2700/3274 loss=0.2543 lr=1.85e-04 0.10s/it
+  ep3 step2800/3274 loss=0.2537 lr=1.83e-04 0.10s/it
+  ep3 step2900/3274 loss=0.2531 lr=1.80e-04 0.10s/it
+  ep3 step3000/3274 loss=0.2535 lr=1.77e-04 0.10s/it
+  ep3 step3100/3274 loss=0.2532 lr=1.75e-04 0.10s/it
+  ep3 step3200/3274 loss=0.2533 lr=1.72e-04 0.10s/it
+[qnli_roberta-base_lora_r8_qv_s0] epoch 3: {"validation": 0.9198242723778144} score=0.9198 (332s)
+  ep4 step100/3274 loss=0.2236 lr=1.68e-04 0.10s/it
+  ep4 step200/3274 loss=0.2327 lr=1.65e-04 0.10s/it
+  ep4 step300/3274 loss=0.2294 lr=1.62e-04 0.11s/it
+  ep4 step400/3274 loss=0.2298 lr=1.60e-04 0.11s/it
+  ep4 step500/3274 loss=0.2294 lr=1.57e-04 0.11s/it
+  ep4 step600/3274 loss=0.2313 lr=1.55e-04 0.11s/it
+  ep4 step700/3274 loss=0.2320 lr=1.52e-04 0.11s/it
+  ep4 step800/3274 loss=0.2330 lr=1.49e-04 0.11s/it
+  ep4 step900/3274 loss=0.2345 lr=1.47e-04 0.11s/it
+  ep4 step1000/3274 loss=0.2343 lr=1.44e-04 0.11s/it
+  ep4 step1100/3274 loss=0.2350 lr=1.42e-04 0.11s/it
+  ep4 step1200/3274 loss=0.2347 lr=1.39e-04 0.11s/it
+  ep4 step1300/3274 loss=0.2357 lr=1.36e-04 0.11s/it
+  ep4 step1400/3274 loss=0.2357 lr=1.34e-04 0.11s/it
+  ep4 step1500/3274 loss=0.2358 lr=1.31e-04 0.11s/it
+  ep4 step1600/3274 loss=0.2350 lr=1.29e-04 0.11s/it
+  ep4 step1700/3274 loss=0.2348 lr=1.26e-04 0.11s/it
+  ep4 step1800/3274 loss=0.2344 lr=1.23e-04 0.11s/it
+  ep4 step1900/3274 loss=0.2349 lr=1.21e-04 0.11s/it
+  ep4 step2000/3274 loss=0.2356 lr=1.18e-04 0.11s/it
+  ep4 step2100/3274 loss=0.2360 lr=1.16e-04 0.11s/it
+  ep4 step2200/3274 loss=0.2357 lr=1.13e-04 0.11s/it
+  ep4 step2300/3274 loss=0.2358 lr=1.10e-04 0.11s/it
+  ep4 step2400/3274 loss=0.2357 lr=1.08e-04 0.11s/it
+  ep4 step2500/3274 loss=0.2362 lr=1.05e-04 0.11s/it
+  ep4 step2600/3274 loss=0.2365 lr=1.03e-04 0.11s/it
+  ep4 step2700/3274 loss=0.2367 lr=1.00e-04 0.11s/it
+  ep4 step2800/3274 loss=0.2366 lr=9.74e-05 0.11s/it
+  ep4 step2900/3274 loss=0.2362 lr=9.48e-05 0.11s/it
+  ep4 step3000/3274 loss=0.2362 lr=9.22e-05 0.11s/it
+  ep4 step3100/3274 loss=0.2366 lr=8.96e-05 0.11s/it
+  ep4 step3200/3274 loss=0.2360 lr=8.70e-05 0.11s/it
+[qnli_roberta-base_lora_r8_qv_s0] epoch 4: {"validation": 0.9236683141131247} score=0.9237 (353s)
+  ep5 step100/3274 loss=0.2193 lr=8.25e-05 0.12s/it
+  ep5 step200/3274 loss=0.2221 lr=7.99e-05 0.11s/it
+  ep5 step300/3274 loss=0.2198 lr=7.73e-05 0.11s/it
+  ep5 step400/3274 loss=0.2194 lr=7.47e-05 0.11s/it
+  ep5 step500/3274 loss=0.2199 lr=7.21e-05 0.11s/it
+  ep5 step600/3274 loss=0.2205 lr=6.95e-05 0.11s/it
+  ep5 step700/3274 loss=0.2193 lr=6.69e-05 0.11s/it
+  ep5 step800/3274 loss=0.2189 lr=6.43e-05 0.11s/it
+  ep5 step900/3274 loss=0.2195 lr=6.17e-05 0.11s/it
+  ep5 step1000/3274 loss=0.2165 lr=5.91e-05 0.11s/it
+  ep5 step1100/3274 loss=0.2169 lr=5.65e-05 0.11s/it
+  ep5 step1200/3274 loss=0.2170 lr=5.39e-05 0.11s/it
+  ep5 step1300/3274 loss=0.2180 lr=5.13e-05 0.11s/it
+  ep5 step1400/3274 loss=0.2183 lr=4.87e-05 0.11s/it
+  ep5 step1500/3274 loss=0.2190 lr=4.61e-05 0.11s/it
+  ep5 step1600/3274 loss=0.2190 lr=4.35e-05 0.11s/it
+  ep5 step1700/3274 loss=0.2189 lr=4.09e-05 0.11s/it
+  ep5 step1800/3274 loss=0.2198 lr=3.83e-05 0.11s/it
+  ep5 step1900/3274 loss=0.2199 lr=3.57e-05 0.11s/it
+  ep5 step2000/3274 loss=0.2202 lr=3.31e-05 0.11s/it
+  ep5 step2100/3274 loss=0.2208 lr=3.05e-05 0.11s/it
+  ep5 step2200/3274 loss=0.2205 lr=2.79e-05 0.11s/it
+  ep5 step2300/3274 loss=0.2202 lr=2.53e-05 0.11s/it
+  ep5 step2400/3274 loss=0.2211 lr=2.27e-05 0.11s/it
+  ep5 step2500/3274 loss=0.2216 lr=2.01e-05 0.11s/it
+  ep5 step2600/3274 loss=0.2217 lr=1.75e-05 0.11s/it
+  ep5 step2700/3274 loss=0.2218 lr=1.49e-05 0.11s/it
+  ep5 step2800/3274 loss=0.2214 lr=1.23e-05 0.11s/it
+  ep5 step2900/3274 loss=0.2210 lr=9.72e-06 0.11s/it
+  ep5 step3000/3274 loss=0.2205 lr=7.12e-06 0.11s/it
+  ep5 step3100/3274 loss=0.2204 lr=4.52e-06 0.11s/it
+  ep5 step3200/3274 loss=0.2210 lr=1.92e-06 0.11s/it
+[qnli_roberta-base_lora_r8_qv_s0] epoch 5: {"validation": 0.9231191652937946} score=0.9231 (379s)
+[qnli_roberta-base_lora_r8_qv_s0] DONE best=0.9237 time=25.3min peak=3074MB

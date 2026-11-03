@@ -1,0 +1,9 @@
+\begin{tabular}{l c c c c}
+\toprule
+设置 & Base (ms) & LoRA 未合并 (ms) & LoRA 已合并 (ms) & 开销 \\
+\midrule
+b1, l32 & 8.75 & 12.26 & 8.82 & +40\% / +1\% \\
+b1, l128 & 9.07 & 12.65 & 9.01 & +39\% / -1\% \\
+b32, l128 & 63.90 & 67.78 & 63.57 & +6\% / -1\% \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,112 @@
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Using the latest cached version of the dataset since glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Traceback (most recent call last):
+  File "/data1/ytli/learn/lora/src/train_glue.py", line 236, in <module>
+    main()
+  File "/data1/ytli/learn/lora/src/train_glue.py", line 113, in main
+    raw = __import__("datasets").load_dataset("glue", args.task)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/ytli/miniconda3/envs/learn/lib/python3.12/site-packages/datasets/load.py", line 1392, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/ytli/miniconda3/envs/learn/lib/python3.12/site-packages/datasets/load.py", line 1166, in load_dataset_builder
+    builder_instance: DatasetBuilder = builder_cls(
+                                       ^^^^^^^^^^^^
+  File "/data1/ytli/miniconda3/envs/learn/lib/python3.12/site-packages/datasets/packaged_modules/cache/cache.py", line 124, in __init__
+    config_name, version, hash = _find_hash_in_cache(
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/data1/ytli/miniconda3/envs/learn/lib/python3.12/site-packages/datasets/packaged_modules/cache/cache.py", line 64, in _find_hash_in_cache
+    raise ValueError(
+ValueError: Couldn't find cache for glue for config 'stsb'
+Available configs in the cache: ['mnli', 'rte', 'sst2']
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Using the latest cached version of the dataset since glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'stsb' at /home/ytli/.cache/huggingface/datasets/glue/stsb/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c (last modified on Tue Nov  3 19:42:01 2026).
+Map (num_proc=2):   0%|          | 0/5749 [00:00<?, ? examples/s]Map (num_proc=2):  17%|█▋        | 1000/5749 [00:00<00:03, 1354.02 examples/s]Map (num_proc=2):  35%|███▍      | 2000/5749 [00:00<00:01, 2343.50 examples/s]Map (num_proc=2):  52%|█████▏    | 3000/5749 [00:01<00:00, 3416.13 examples/s]Map (num_proc=2):  67%|██████▋   | 3875/5749 [00:01<00:00, 4121.46 examples/s]Map (num_proc=2): 100%|██████████| 5749/5749 [00:01<00:00, 6187.12 examples/s]Map (num_proc=2): 100%|██████████| 5749/5749 [00:01<00:00, 3830.61 examples/s]
+Map (num_proc=2):   0%|          | 0/1500 [00:00<?, ? examples/s]Map (num_proc=2):  50%|█████     | 750/1500 [00:00<00:00, 1181.10 examples/s]Map (num_proc=2): 100%|██████████| 1500/1500 [00:00<00:00, 1842.75 examples/s]
+[stsb_roberta-base_lora_r8_qv_s0] trainable=886,273 lora=294,912 (0.709%) steps/epoch=360 total=7200
+/data1/ytli/learn/lora/src/train_glue.py:190: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  scheduler.step()
+  ep1 step100/360 loss=5.8888 lr=9.26e-05 0.08s/it
+  ep1 step200/360 loss=3.8932 lr=1.85e-04 0.07s/it
+  ep1 step300/360 loss=2.9342 lr=2.78e-04 0.07s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 1: {"validation": 0.8657563924789429} score=0.8658 (27s)
+  ep2 step100/360 loss=0.6811 lr=3.98e-04 0.07s/it
+  ep2 step200/360 loss=0.6836 lr=3.92e-04 0.07s/it
+  ep2 step300/360 loss=0.6657 lr=3.87e-04 0.07s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 2: {"validation": 0.8850476741790771} score=0.8850 (25s)
+  ep3 step100/360 loss=0.4971 lr=3.77e-04 0.07s/it
+  ep3 step200/360 loss=0.5119 lr=3.71e-04 0.07s/it
+  ep3 step300/360 loss=0.5141 lr=3.65e-04 0.07s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 3: {"validation": 0.8969725370407104} score=0.8970 (27s)
+  ep4 step100/360 loss=0.4577 lr=3.56e-04 0.07s/it
+  ep4 step200/360 loss=0.4625 lr=3.50e-04 0.07s/it
+  ep4 step300/360 loss=0.4526 lr=3.44e-04 0.07s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 4: {"validation": 0.9006226658821106} score=0.9006 (25s)
+  ep5 step100/360 loss=0.3948 lr=3.35e-04 0.07s/it
+  ep5 step200/360 loss=0.3894 lr=3.29e-04 0.07s/it
+  ep5 step300/360 loss=0.4008 lr=3.23e-04 0.07s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 5: {"validation": 0.9038665294647217} score=0.9039 (26s)
+  ep6 step100/360 loss=0.3920 lr=3.13e-04 0.06s/it
+  ep6 step200/360 loss=0.3813 lr=3.07e-04 0.06s/it
+  ep6 step300/360 loss=0.3715 lr=3.01e-04 0.06s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 6: {"validation": 0.8970410823822021} score=0.8970 (24s)
+  ep7 step100/360 loss=0.3282 lr=2.92e-04 0.06s/it
+  ep7 step200/360 loss=0.3282 lr=2.86e-04 0.06s/it
+  ep7 step300/360 loss=0.3289 lr=2.80e-04 0.06s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 7: {"validation": 0.910037100315094} score=0.9100 (24s)
+  ep8 step100/360 loss=0.3069 lr=2.71e-04 0.07s/it
+  ep8 step200/360 loss=0.3133 lr=2.65e-04 0.07s/it
+  ep8 step300/360 loss=0.3100 lr=2.59e-04 0.07s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 8: {"validation": 0.9085497856140137} score=0.9085 (25s)
+  ep9 step100/360 loss=0.2908 lr=2.49e-04 0.06s/it
+  ep9 step200/360 loss=0.2942 lr=2.43e-04 0.06s/it
+  ep9 step300/360 loss=0.2847 lr=2.38e-04 0.06s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 9: {"validation": 0.9077108502388} score=0.9077 (24s)
+  ep10 step100/360 loss=0.2801 lr=2.28e-04 0.06s/it
+  ep10 step200/360 loss=0.2766 lr=2.22e-04 0.07s/it
+  ep10 step300/360 loss=0.2759 lr=2.16e-04 0.06s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 10: {"validation": 0.9081034660339355} score=0.9081 (24s)
+  ep11 step100/360 loss=0.2617 lr=2.07e-04 0.06s/it
+  ep11 step200/360 loss=0.2772 lr=2.01e-04 0.07s/it
+  ep11 step300/360 loss=0.2718 lr=1.95e-04 0.07s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 11: {"validation": 0.9117474555969238} score=0.9117 (25s)
+  ep12 step100/360 loss=0.2475 lr=1.86e-04 0.06s/it
+  ep12 step200/360 loss=0.2457 lr=1.80e-04 0.06s/it
+  ep12 step300/360 loss=0.2441 lr=1.74e-04 0.06s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 12: {"validation": 0.9116393327713013} score=0.9116 (25s)
+  ep13 step100/360 loss=0.2251 lr=1.64e-04 0.07s/it
+  ep13 step200/360 loss=0.2286 lr=1.58e-04 0.07s/it
+  ep13 step300/360 loss=0.2320 lr=1.52e-04 0.07s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 13: {"validation": 0.9108100533485413} score=0.9108 (25s)
+  ep14 step100/360 loss=0.2281 lr=1.43e-04 0.07s/it
+  ep14 step200/360 loss=0.2279 lr=1.37e-04 0.07s/it
+  ep14 step300/360 loss=0.2262 lr=1.31e-04 0.07s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 14: {"validation": 0.9100782871246338} score=0.9101 (26s)
+  ep15 step100/360 loss=0.2294 lr=1.22e-04 0.07s/it
+  ep15 step200/360 loss=0.2262 lr=1.16e-04 0.06s/it
+  ep15 step300/360 loss=0.2249 lr=1.10e-04 0.06s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 15: {"validation": 0.9104869365692139} score=0.9105 (24s)
+  ep16 step100/360 loss=0.2207 lr=1.00e-04 0.07s/it
+  ep16 step200/360 loss=0.2248 lr=9.46e-05 0.07s/it
+  ep16 step300/360 loss=0.2196 lr=8.87e-05 0.07s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 16: {"validation": 0.9107692837715149} score=0.9108 (27s)
+  ep17 step100/360 loss=0.2032 lr=7.92e-05 0.07s/it
+  ep17 step200/360 loss=0.2055 lr=7.33e-05 0.07s/it
+  ep17 step300/360 loss=0.2011 lr=6.74e-05 0.06s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 17: {"validation": 0.9092737436294556} score=0.9093 (24s)
+  ep18 step100/360 loss=0.2097 lr=5.79e-05 0.07s/it
+  ep18 step200/360 loss=0.2053 lr=5.20e-05 0.07s/it
+  ep18 step300/360 loss=0.1998 lr=4.61e-05 0.07s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 18: {"validation": 0.9109379649162292} score=0.9109 (25s)
+  ep19 step100/360 loss=0.1824 lr=3.66e-05 0.06s/it
+  ep19 step200/360 loss=0.1954 lr=3.07e-05 0.06s/it
+  ep19 step300/360 loss=0.1932 lr=2.48e-05 0.06s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 19: {"validation": 0.9098913669586182} score=0.9099 (24s)
+  ep20 step100/360 loss=0.1887 lr=1.54e-05 0.07s/it
+  ep20 step200/360 loss=0.1859 lr=9.46e-06 0.07s/it
+  ep20 step300/360 loss=0.1898 lr=3.55e-06 0.07s/it
+[stsb_roberta-base_lora_r8_qv_s0] epoch 20: {"validation": 0.9105926752090454} score=0.9106 (26s)
+[stsb_roberta-base_lora_r8_qv_s0] DONE best=0.9117 time=8.3min peak=1292MB

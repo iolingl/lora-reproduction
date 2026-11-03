@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# LaTeX 编译中间产物
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.synctex.gz
+report/preamble_test.*
+report/t.*
+
+# 根目录遗留的测试编译产物
+/d.aux
+/d.log
+/d.pdf
+*.aux
+*.out
+
+# 第三方克隆、数据与论文原文（按 README 自行获取）
+official/
+data/
+2106.09685v2.pdf
+
+# 模型权重（体积大；results 中的 json/预测/日志均已保留）
+results/**/*.pt
+
+# 保留训练日志（上面的 *.log 规则不影响 logs/）
+!logs/*.log

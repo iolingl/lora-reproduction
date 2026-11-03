@@ -1,0 +1,9 @@
+{
+  "ckpt": "official/LoRA/examples/NLU/roberta_base_lora_mnli.bin",
+  "alpha": 16.0,
+  "scores": {
+    "matched": 87.36627610799796,
+    "mismatched": 86.9507729861676
+  },
+  "avg": 87.15852454708278
+}
