@@ -65,7 +65,6 @@ git clone https://github.com/microsoft/LoRA official/LoRA
 git clone https://github.com/tuetschek/e2e-dataset data/e2e
 ```
 
-国内网络可先设置代理，例如 `export https_proxy=http://127.0.0.1:7897`。
 
 ## 复现步骤
 
@@ -89,11 +88,6 @@ python src/subspace.py --ckpt_a results/glue/abl_rank8_sst2/best_lora.pt --rank_
 python src/make_tables.py && python src/make_figures.py
 ```
 
-报告编译（需要 XeLaTeX 与 ctex）：
-
-```bash
-cd report && xelatex report.tex && xelatex report.tex
-```
 
 ## 实现说明
 
