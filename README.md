@@ -50,7 +50,6 @@ logs/      完整训练日志
 ## 环境
 
 - Python 3.12，依赖见 [`requirements.txt`](requirements.txt)
-- 4 × NVIDIA TITAN RTX (24GB)，CUDA 13.0
 - GLUE 通过 HuggingFace `datasets` 在线加载；E2E 需要本地 CSV
 
 ## 准备
